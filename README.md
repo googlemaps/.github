@@ -1,2 +1,2 @@
 # .github
-Shared .github config files
+Default configurations for googlemaps repositories
