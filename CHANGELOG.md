@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/googlemaps/.github/compare/v1.0.0...v1.0.1) (2020-03-17)
+
+
+### Bug Fixes
+
+* use bot account ([dd6cfdc](https://github.com/googlemaps/.github/commit/dd6cfdcfe2644093c4eaba70b2a87c098934a61d))
+
 # 1.0.0 (2020-03-17)
 
 
