@@ -10,13 +10,16 @@ inputs:
     required: true
   tar_strip_components:
     description: "Number of components to strip from tar."
-    default: 1
+    default: "1"
+    required: false
   git_email:
     description: "Git email for commit"
-    default: "jpoehnelt@google.com" # TODO: Use actual bot
+    default: "googlemaps-bot@google.com"
+    required: false
   git_name:
     description: "Git name for commit"
-    default: "GAPIC Action"
+    default: "googlemaps-bot"
+    required: false
   github_token:
     description: "Token to use to push to branch"
     required: true
