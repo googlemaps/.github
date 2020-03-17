@@ -1,0 +1,32 @@
+# action.yml
+name: "GAPIC Action"
+description: "Generate Google Client libraries from github.com/googleapis/googleapis."
+inputs:
+  target:
+    description: "Bazel target for client library tar in googleapis/googleapis"
+    required: true
+  tar_path:
+    description: "Path in tar to extract."
+    required: true
+  tar_strip_components:
+    description: "Number of components to strip from tar."
+    default: 1
+  git_email:
+    description: "Git email for commit"
+    default: "jpoehnelt@google.com" # TODO: Use actual bot
+  git_name:
+    description: "Git name for commit"
+    default: "GAPIC Action"
+  github_token:
+    description: "Token to use to push to branch"
+    required: true
+  cache_service_account:
+    description: "Service account json string for Bazel cache"
+    required: false
+  cache_bucket:
+    description: "Bucket name for Bazel cache"
+    required: false
+    default: gapic_action_bazel_cache
+runs:
+  using: "docker"
+  image: "Dockerfile"
