@@ -1,3 +1,0 @@
-[submodule "actions/semantic-release-action"]
-	path = actions/semantic-release-action
-	url = git@github.com:cycjimmy/semantic-release-action.git
