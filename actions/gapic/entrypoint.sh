@@ -29,7 +29,7 @@ bazel build $INPUT_TARGET
 
 popd
 
-#### PUBLISH CHANGES ####
+#### MAKE LOCAL CHANGES ####
 
 pushd $TEMP_GIT_LOCAL
 
@@ -46,17 +46,27 @@ git reset --hard origin/master
 # extract the tar to the correct location
 tar xf "${TEMP_GIT_GOOGLEAPIS}/bazel-bin/${TARGET_OUTPUT}" --strip-components $INPUT_TAR_STRIP_COMPONENTS $INPUT_TAR_PATH
 
-# commit the changes if any to the branch
-if [[ -n $(git status -s -uall) ]]; then
+#### PUBLISH COMMITS ####
+
+[[ -n $(git diff "origin/master") ]] && differs_from_master=1 || differs_from_master=0
+
+if [ $differs_from_master ]; then
     git add -A
     git commit -m 'feat: regenerate gapic'
-    git push -f -u origin $BRANCH
 
-    curl \
-        -H "Authorization: Bearer ${INPUT_GITHUB_TOKEN}" \
-        -H "Content-Type:application/json" \
-        -X POST https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls \
-        -d "{\"title\":\"GAPIC Client Update: ${INPUT_TARGET}\", \"body\": \"\", \"head\": \"$BRANCH\", \"base\": \"master\"}"
+    [[ -n $(git ls-remote --heads origin ${BRANCH}) ]] && has_branch=1 || has_branch=0
+    [[ -n $(git diff "origin/${BRANCH}") ]] && differs_from_branch=1 || differs_from_branch=0
+
+    if [[ !$has_branch || $differs_from_branch ]]; then
+        git push -f -u origin $BRANCH
+
+        curl \
+            -H "Authorization: Bearer ${INPUT_GITHUB_TOKEN}" \
+            -H "Content-Type:application/json" \
+            -X POST https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls \
+            -d "{\"title\":\"GAPIC Client Update: ${INPUT_TARGET}\", \"body\": \"\", \"head\": \"$BRANCH\", \"base\": \"master\"}"
+    fi
+
 fi
 
 popd
