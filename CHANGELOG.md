@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/googlemaps/.github/compare/v1.0.1...v1.0.2) (2020-03-18)
+
+
+### Bug Fixes
+
+* **actions/gapic:** allow optional cache setting ([edacc31](https://github.com/googlemaps/.github/commit/edacc310b1fec8d3a2d6a3fad5eedaeb612357a4))
+
 ## [1.0.1](https://github.com/googlemaps/.github/compare/v1.0.0...v1.0.1) (2020-03-17)
 
 
