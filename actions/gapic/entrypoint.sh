@@ -55,9 +55,8 @@ if [ $differs_from_master ]; then
     git commit -m 'feat: regenerate gapic'
 
     [[ -n $(git ls-remote --heads origin ${BRANCH}) ]] && has_branch=1 || has_branch=0
-    [[ -n $(git diff "origin/${BRANCH}") ]] && differs_from_branch=1 || differs_from_branch=0
 
-    if [[ !$has_branch || $differs_from_branch ]]; then
+    if [[ !$has_branch || -n $(git diff "origin/${BRANCH}") ]]; then
         git push -f -u origin $BRANCH
 
         curl \
