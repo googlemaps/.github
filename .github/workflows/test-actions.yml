@@ -17,3 +17,4 @@ jobs:
         tar_path: gapic-maps-routes-v1-go/cloud.google.com/go/maps
         tar_strip_components: 4
         cache_service_account: ${{ secrets.SERVICE_ACCOUNT_CACHE }}
+        dry_run: true
