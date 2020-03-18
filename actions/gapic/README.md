@@ -36,6 +36,10 @@ Service account json string for Bazel cache.
 
 Bucket name for Bazel cache.
 
+### `dry_run`
+
+Run without writes to repo.
+
 ## Usage
 
 ```yaml

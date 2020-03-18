@@ -30,6 +30,9 @@ inputs:
     description: "Bucket name for Bazel cache"
     required: false
     default: gapic_action_bazel_cache
+  dry_run:
+    description: "Do not push changes"
+    required: false
 runs:
   using: "docker"
   image: "Dockerfile"
