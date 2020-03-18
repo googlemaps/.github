@@ -18,11 +18,12 @@ pushd $TEMP_GIT_GOOGLEAPIS
 
 git clone --single-branch --branch master https://github.com/googleapis/googleapis.git .
 
-set +x  # WARNING: do not remove
-echo -n "${INPUT_CACHE_SERVICE_ACCOUNT}" > $GOOGLE_APPLICATION_CREDENTIALS
-
-echo "build --remote_http_cache=https://storage.googleapis.com/${INPUT_CACHE_BUCKET}" >> .bazelrc
-echo "build --google_credentials=${GOOGLE_APPLICATION_CREDENTIALS}" >> .bazelrc
+set +x # WARNING: do not remove
+if [[ -z "${INPUT_CACHE_SERVICE_ACCOUNT}" ]]; then
+    echo -n "${INPUT_CACHE_SERVICE_ACCOUNT}" >$GOOGLE_APPLICATION_CREDENTIALS
+    echo "build --remote_http_cache=https://storage.googleapis.com/${INPUT_CACHE_BUCKET}" >>.bazelrc
+    echo "build --google_credentials=${GOOGLE_APPLICATION_CREDENTIALS}" >>.bazelrc
+fi
 
 bazel build $INPUT_TARGET
 
@@ -45,18 +46,17 @@ git reset --hard origin/master
 # extract the tar to the correct location
 tar xf "${TEMP_GIT_GOOGLEAPIS}/bazel-bin/${TARGET_OUTPUT}" --strip-components $INPUT_TAR_STRIP_COMPONENTS $INPUT_TAR_PATH
 
-
 # commit the changes if any to the branch
 if [[ -n $(git status -s -uall) ]]; then
     git add -A
     git commit -m 'feat: regenerate gapic'
     git push -f -u origin $BRANCH
-    
+
     curl \
-    -H "Authorization: Bearer ${INPUT_GITHUB_TOKEN}" \
-    -H "Content-Type:application/json" \
-    -X POST https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls \
-    -d "{\"title\":\"GAPIC Client Update: ${INPUT_TARGET}\", \"body\": \"\", \"head\": \"$BRANCH\", \"base\": \"master\"}"
+        -H "Authorization: Bearer ${INPUT_GITHUB_TOKEN}" \
+        -H "Content-Type:application/json" \
+        -X POST https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls \
+        -d "{\"title\":\"GAPIC Client Update: ${INPUT_TARGET}\", \"body\": \"\", \"head\": \"$BRANCH\", \"base\": \"master\"}"
 fi
 
 popd
