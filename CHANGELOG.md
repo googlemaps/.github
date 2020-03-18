@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/googlemaps/.github/compare/v1.0.2...v1.0.3) (2020-03-18)
+
+
+### Bug Fixes
+
+* switch -z to -n ([#3](https://github.com/googlemaps/.github/issues/3)) ([5719252](https://github.com/googlemaps/.github/commit/57192529cc4fa95f27df11dc8e3d03cf686f7a89))
+
 ## [1.0.2](https://github.com/googlemaps/.github/compare/v1.0.1...v1.0.2) (2020-03-18)
 
 
