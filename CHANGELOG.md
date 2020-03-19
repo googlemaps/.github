@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/googlemaps/.github/compare/v1.0.3...v1.1.0) (2020-03-19)
+
+
+### Bug Fixes
+
+* can only check for diff against existing branch ([#11](https://github.com/googlemaps/.github/issues/11)) ([2d9a019](https://github.com/googlemaps/.github/commit/2d9a019eedfd8d95b5d6bcdc71b1ae191becd55a))
+* dry_run should work when no branch ([bf20980](https://github.com/googlemaps/.github/commit/bf2098065af7c758bed2cd674b56409299304441))
+* **actions/gapic:** only push if necessary ([3f38e4f](https://github.com/googlemaps/.github/commit/3f38e4f69e555b984fb0071a8b2eec714626af31))
+
+
+### Features
+
+* add dry_run option ([#8](https://github.com/googlemaps/.github/issues/8)) ([106379e](https://github.com/googlemaps/.github/commit/106379e0ad00045bc925db933c27072b91560c34))
+
 ## [1.0.3](https://github.com/googlemaps/.github/compare/v1.0.2...v1.0.3) (2020-03-18)
 
 
