@@ -56,7 +56,8 @@ if [ $differs_from_master ]; then
 
     [[ -n $(git ls-remote --heads origin ${BRANCH}) ]] && has_branch=1 || has_branch=0
 
-    if [[ !$has_branch || -n $(git diff "origin/${BRANCH}") ]]; then
+
+    if [[ !$has_branch || -n $(git diff "origin/${BRANCH}") && -z $INPUT_DRY_RUN ]]; then
         git push -f -u origin $BRANCH
 
         curl \
