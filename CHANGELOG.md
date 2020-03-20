@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/googlemaps/.github/compare/v1.1.0...v1.1.1) (2020-03-20)
+
+
+### Bug Fixes
+
+* avoid failure on nothing to commit ([6f107e6](https://github.com/googlemaps/.github/commit/6f107e615ad845e580213a93519c859bef481bb1))
+
 # [1.1.0](https://github.com/googlemaps/.github/compare/v1.0.3...v1.1.0) (2020-03-19)
 
 
