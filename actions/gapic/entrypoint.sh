@@ -52,7 +52,7 @@ tar xf "${TEMP_GIT_GOOGLEAPIS}/bazel-bin/${TARGET_OUTPUT}" --strip-components $I
 
 if [ $differs_from_master ]; then
     git add -A
-    git commit -m 'feat: regenerate gapic'
+    git commit -m 'feat: regenerate gapic' || true
 
     [[ -n $(git ls-remote --heads origin ${BRANCH}) ]] && has_branch=1 || has_branch=0
 
