@@ -1,4 +1,4 @@
-name: Synce Secrets Across Repositories
+name: Sync Github Organization
 
 on:
   schedule:
@@ -17,7 +17,6 @@ jobs:
           ^SECRETS_SYNC_RUN_ID$
         REPOSITORIES: |
           $googlemaps/.*$
-        DRY_RUN: true
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
       env:
         SECRETS_SYNC_RUN_ID: ${{github.run_id}}
