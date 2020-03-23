@@ -1,5 +1,4 @@
-name: Sync Github Organization
-
+name: Sync Settings
 on:
   schedule:
     - cron: '*/10 * * * *'
