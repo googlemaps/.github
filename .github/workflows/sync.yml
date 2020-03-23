@@ -16,7 +16,7 @@ jobs:
         SECRETS: |
           ^SECRETS_SYNC_RUN_ID$
         REPOSITORIES: |
-          ^googlemaps/.*$
+          ^googlemaps
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
       env:
         SECRETS_SYNC_RUN_ID: ${{github.run_id}}
