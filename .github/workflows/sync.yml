@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: google/secrets-sync-action@v1.1.1
+    - uses: google/secrets-sync-action@v1.1.2
       name: Sync Secrets Run ID
       with:
         SECRETS: |
