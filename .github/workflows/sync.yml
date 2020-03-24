@@ -19,4 +19,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
       env:
         SYNCED_RUN_ID: ${{github.run_id}}
-        SYNCED_GITHUB_TOKEN_REPO: ${{github.GITHUB_TOKEN_REPO}}
+        SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GITHUB_TOKEN_REPO}}
