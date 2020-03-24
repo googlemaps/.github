@@ -13,7 +13,7 @@ jobs:
       name: Sync Secrets Run ID
       with:
         SECRETS: |
-          ^SYNCED_.*$
+          ^SYNCED_
         REPOSITORIES: |
           ^googlemaps
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
