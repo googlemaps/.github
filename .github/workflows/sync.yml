@@ -20,6 +20,7 @@ jobs:
       env:
         SYNCED_RUN_ID: ${{github.run_id}}
         SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GITHUB_TOKEN_REPO}}
+        SYNCED_GOOGLE_MAPS_API_KEY_SERVICES: ${{secrets.GOOGLE_MAPS_API_KEY_SERVICES}}
     - uses: google/secrets-sync-action@v1.1.2
       name: Sync JavaScript Secrets
       with:
