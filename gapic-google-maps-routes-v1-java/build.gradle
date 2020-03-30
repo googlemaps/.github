@@ -1,0 +1,64 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+}
+
+apply plugin: 'java'
+
+description = 'GAPIC library for gapic-google-maps-routes-v1-java'
+group = 'com.google.maps'
+version = '0.0.0-SNAPSHOT'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+  mavenCentral()
+  mavenLocal()
+}
+
+compileJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'UTF-8'
+
+dependencies {
+  compile 'com.google.api:gax:1.54.0'
+  testCompile 'com.google.api:gax:1.54.0:testlib'
+  compile 'com.google.api:gax-grpc:1.54.0'
+  testCompile 'com.google.api:gax-grpc:1.54.0:testlib'
+  testCompile 'io.grpc:grpc-netty-shaded:1.27.2'
+  testCompile 'junit:junit:4.13'
+  compile project(':proto-google-maps-routes-v1-java')
+  testCompile project(':grpc-google-maps-routes-v1-java')
+}
+
+task smokeTest(type: Test) {
+  filter {
+    includeTestsMatching "*SmokeTest"
+    setFailOnNoMatchingTests false
+  }
+}
+
+test {
+  exclude "**/*SmokeTest*"
+}
+
+sourceSets {
+  main {
+    java {
+      srcDir 'src/main/java'
+    }
+  }
+}
+
+clean {
+  delete 'all-jars'
+}
+
+task allJars(type: Copy) {
+  dependsOn test, jar
+  into 'all-jars'
+  // Replace with `from configurations.testRuntime, jar` to include test dependencies
+  from configurations.runtime, jar
+}
+
+apply from: "./publish.gradle"
