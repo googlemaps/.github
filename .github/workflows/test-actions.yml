@@ -12,9 +12,12 @@ jobs:
     - name: Run the gapic action
       uses: ./actions/gapic
       with:
-        target: //google/maps/routes/v1:gapic-maps-routes-v1-go
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        tar_path: gapic-maps-routes-v1-go/cloud.google.com/go/maps
-        tar_strip_components: 4
-        cache_service_account: ${{ secrets.SERVICE_ACCOUNT_CACHE }}
-        dry_run: true
+        target: //google/maps/routes/v1:google-maps-routes-v1-java-postprocess
+        github_token: ${{ secrets.GITHUB_TOKEN_REPO }}
+        tar_path: google-maps-routes-v1-java
+        tar_strip_components: 1
+        cache_service_account: ${{ secrets.CACHE_SERVICE_ACCOUNT }}
+        ignore: |
+          gradle/*
+          gradlew
+          gradlew.bat

@@ -52,12 +52,16 @@ tar xf "${TEMP_GIT_GOOGLEAPIS}/bazel-bin/${TARGET_OUTPUT}" --strip-components $I
 
 if [ $differs_from_master ]; then
     git add -A
+    if [[ -n "${INPUT_IGNORE}" ]]; then 
+        git reset HEAD "$(echo $INPUT_IGNORE | tr '\n' ' ')"
+        git status
+    fi
     git commit -m 'feat: regenerate gapic' || true
 
     [[ -n $(git ls-remote --heads origin ${BRANCH}) ]] && has_branch=1 || has_branch=0
 
 
-    if [[ ( !$has_branch || -n $(git diff "origin/${BRANCH}") ) && -z $INPUT_DRY_RUN ]]; then
+    if [[ ( ! $has_branch || -n $(git diff "origin/${BRANCH}") ) && -z $INPUT_DRY_RUN ]]; then
         git push -f -u origin $BRANCH
 
         curl \
