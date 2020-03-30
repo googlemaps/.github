@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/googlemaps/.github/compare/v1.1.1...v1.2.0) (2020-03-30)
+
+
+### Features
+
+* **actions/gapic:** allow ability to ignore changes ([#15](https://github.com/googlemaps/.github/issues/15)) ([11b1dca](https://github.com/googlemaps/.github/commit/11b1dca9e33acdcb4812d8afd581c29f011e10a9))
+
 ## [1.1.1](https://github.com/googlemaps/.github/compare/v1.1.0...v1.1.1) (2020-03-20)
 
 
