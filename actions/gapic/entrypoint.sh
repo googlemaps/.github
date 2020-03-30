@@ -52,23 +52,22 @@ tar xf "${TEMP_GIT_GOOGLEAPIS}/bazel-bin/${TARGET_OUTPUT}" --strip-components $I
 
 if [ $differs_from_master ]; then
     set -x
-    
+
     git add -A
-    
+
     echo "DEBUG: ignoring ${INPUT_IGNORE}"
-    if [[ -n "${INPUT_IGNORE}" ]]; then 
-       # git reset HEAD "$(echo $INPUT_IGNORE | tr '\n' ' ')"
+    if [[ -z "${INPUT_IGNORE}" ]]; then
+        git reset HEAD "$(echo $INPUT_IGNORE | tr '\n' ' ')"
         git status
     fi
-    
+
     git commit -m 'feat: regenerate gapic' || true
 
     echo "DEBUG: checking if branch already exists"
     [[ -n $(git ls-remote --heads origin ${BRANCH}) ]] && has_branch=1 || has_branch=0
 
-
     echo "DEBUG: if branch exists, check if different"
-    if [[ ( $has_branch -eq 0 || -n $(git diff "origin/${BRANCH}") ) && -z $INPUT_DRY_RUN ]]; then
+    if [[ ($has_branch -eq 0 || -n $(git diff "origin/${BRANCH}")) && -z $INPUT_DRY_RUN ]]; then
         git push -f -u origin $BRANCH
 
         echo "DEBUG: creating pull request"
