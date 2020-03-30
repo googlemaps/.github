@@ -68,7 +68,7 @@ if [ $differs_from_master ]; then
 
 
     echo "DEBUG: if branch exists, check if different"
-    if [[ ( ! $has_branch || -n $(git diff "origin/${BRANCH}") ) && -z $INPUT_DRY_RUN ]]; then
+    if [[ ( $has_branch -eq 0 || -n $(git diff "origin/${BRANCH}") ) && -z $INPUT_DRY_RUN ]]; then
         git push -f -u origin $BRANCH
 
         echo "DEBUG: creating pull request"
