@@ -9,7 +9,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN_REPO }} 
+        token: ${{ secrets.SYNCED_GITHUB_TOKEN_REPO }} 
     - name: Semantic Release
       uses: cycjimmy/semantic-release-action@v2
       with:
@@ -20,4 +20,4 @@ jobs:
           "@semantic-release/git
           "@semantic-release/github
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+        GH_TOKEN: ${{ secrets.SYNCED_GITHUB_TOKEN_REPO }}
