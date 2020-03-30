@@ -36,6 +36,10 @@ Service account json string for Bazel cache.
 
 Bucket name for Bazel cache.
 
+### `ignore`
+
+Files to keep out of staging.
+
 ### `dry_run`
 
 Run without writes to repo.
@@ -50,4 +54,8 @@ uses: googlemaps/actions/gapic@master
     tar_path: gapic-maps-routes-v1-go/cloud.google.com/go/maps
     tar_strip_components: 4
     cache_service_account: ${{ secrets.SERVICE_ACCOUNT_CACHE }}
+    ignore: |
+      gradle/*
+      gradlew
+      gradlew.bat
 ```

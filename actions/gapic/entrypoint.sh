@@ -51,15 +51,27 @@ tar xf "${TEMP_GIT_GOOGLEAPIS}/bazel-bin/${TARGET_OUTPUT}" --strip-components $I
 [[ -n $(git diff "origin/master") ]] && differs_from_master=1 || differs_from_master=0
 
 if [ $differs_from_master ]; then
+    set -x
+
     git add -A
+
+    if [[ -n "${INPUT_IGNORE}" ]]; then
+        for f in $INPUT_IGNORE; do
+            git reset HEAD "${f}"
+        done
+        git status
+    fi
+
     git commit -m 'feat: regenerate gapic' || true
 
+    echo "DEBUG: checking if branch already exists"
     [[ -n $(git ls-remote --heads origin ${BRANCH}) ]] && has_branch=1 || has_branch=0
 
-
-    if [[ ( !$has_branch || -n $(git diff "origin/${BRANCH}") ) && -z $INPUT_DRY_RUN ]]; then
+    echo "DEBUG: if branch exists, check if different"
+    if [[ ($has_branch -eq 0 || -n $(git diff "origin/${BRANCH}")) && -z $INPUT_DRY_RUN ]]; then
         git push -f -u origin $BRANCH
 
+        echo "DEBUG: creating pull request"
         curl \
             -H "Authorization: Bearer ${INPUT_GITHUB_TOKEN}" \
             -H "Content-Type:application/json" \
