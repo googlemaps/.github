@@ -55,9 +55,10 @@ if [ $differs_from_master ]; then
 
     git add -A
 
-    echo "DEBUG: ignoring ${INPUT_IGNORE}"
-    if [[ -z "${INPUT_IGNORE}" ]]; then
-        git reset HEAD "$(echo $INPUT_IGNORE | tr '\n' ' ')"
+    if [[ -n "${INPUT_IGNORE}" ]]; then
+        for f in $INPUT_IGNORE; do
+            git reset HEAD "${f}"
+        done
         git status
     fi
 
