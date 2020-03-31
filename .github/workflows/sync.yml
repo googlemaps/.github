@@ -61,3 +61,16 @@ jobs:
           SYNCED_GPG_KEY_ARMOR: ${{secrets.GPG_KEY_ARMOR}}
           SYNCED_GPG_KEY_ID: ${{secrets.GPG_KEY_ID}}
           SYNCED_GPG_KEY_PASSWORD: ${{secrets.GPG_KEY_PASSWORD}}
+      - uses: google/secrets-sync-action@v1.1.2
+        name: Sync Bazel Cache Secrets
+        with:
+          SECRETS: |
+            ^SYNCED_BAZEL_CACHE
+          REPOSITORIES: |
+            ^googlemaps/java-.*$
+            ^googlemaps/python-.*$
+            ^googlemaps/go-.*$
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+        env:
+          SYNCED_BAZEL_CACHE_SERVICE_ACCOUNT: ${{secrets.BAZEL_CACHE_SERVICE_ACCOUNT}}
+          SYNCED_BAZEL_CACHE_BUCKET: geo-devrel-bazel-cache
