@@ -40,8 +40,8 @@ jobs:
           SECRETS: |
             ^SYNCED_SONATYPE
           REPOSITORIES: |
-            ^googlemaps/java-*$
-            ^googlemaps/android-*$
+            ^googlemaps/java-.*$
+            ^googlemaps/android-.*$
             ^googlemaps/google-maps-services-java$
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
         env:
@@ -53,8 +53,8 @@ jobs:
           SECRETS: |
             ^SYNCED_GPG_
           REPOSITORIES: |
-            ^googlemaps/java-*$
-            ^googlemaps/android-*$
+            ^googlemaps/java-.*$
+            ^googlemaps/android-.*$
             ^googlemaps/google-maps-services-java$
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
         env:
