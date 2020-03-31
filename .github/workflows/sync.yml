@@ -1,36 +1,63 @@
 name: Sync
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: "*/10 * * * *"
   push:
-    branches: 
+    branches:
       - master
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: google/secrets-sync-action@v1.1.2
-      name: Sync Secrets
-      with:
-        SECRETS: |
-          ^SYNCED_
-        REPOSITORIES: |
-          ^googlemaps
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
-      env:
-        SYNCED_RUN_ID: ${{github.run_id}}
-        SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GITHUB_TOKEN_REPO}}
-        SYNCED_GOOGLE_MAPS_API_KEY_SERVICES: ${{secrets.GOOGLE_MAPS_API_KEY_SERVICES}}
-    - uses: google/secrets-sync-action@v1.1.2
-      name: Sync JavaScript Secrets
-      with:
-        SECRETS: |
-          ^SYNCED_NPM_TOKEN$
-        REPOSITORIES: |
-          ^googlemaps/.*-js$
-          ^googlemaps/js-.*$
-          ^googlemaps/nodejs-.*$
-          ^googlemaps/v3-utility-library$
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
-      env:
-        SYNCED_NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+      - uses: google/secrets-sync-action@v1.1.2
+        name: Sync Secrets
+        with:
+          SECRETS: |
+            ^SYNCED_
+          REPOSITORIES: |
+            ^googlemaps
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+        env:
+          SYNCED_RUN_ID: ${{github.run_id}}
+          SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GITHUB_TOKEN_REPO}}
+          SYNCED_GOOGLE_MAPS_API_KEY_SERVICES: ${{secrets.GOOGLE_MAPS_API_KEY_SERVICES}}
+      - uses: google/secrets-sync-action@v1.1.2
+        name: Sync JavaScript Secrets
+        with:
+          SECRETS: |
+            ^SYNCED_NPM_TOKEN$
+          REPOSITORIES: |
+            ^googlemaps/.*-js$
+            ^googlemaps/js-.*$
+            ^googlemaps/nodejs-.*$
+            ^googlemaps/v3-utility-library$
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+        env:
+          SYNCED_NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+      - uses: google/secrets-sync-action@v1.1.2
+        name: Sync Sonatype Secrets
+        with:
+          SECRETS: |
+            ^SYNCED_SONATYPE
+          REPOSITORIES: |
+            ^googlemaps/java-*$
+            ^googlemaps/android-*$
+            ^googlemaps/google-maps-services-java$
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+        env:
+          SYNCED_SONATYPE_USERNAME: ${{secrets.SONATYPE_USERNAME}} # googlemaps-bot
+          SYNCED_SONATYPE_PASSWORD: ${{secrets.SONATYPE_PASSWORD}}
+      - uses: google/secrets-sync-action@v1.1.2
+        name: Sync GPG Secrets
+        with:
+          SECRETS: |
+            ^SYNCED_GPG_
+          REPOSITORIES: |
+            ^googlemaps/java-*$
+            ^googlemaps/android-*$
+            ^googlemaps/google-maps-services-java$
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+        env:
+          SYNCED_GPG_KEY_ARMOR: ${{secrets.GPG_KEY_ARMOR}}
+          SYNCED_GPG_KEY_ID: ${{secrets.GPG_KEY_ID}}
+          SYNCED_GPG_KEY_PASSWORD: ${{secrets.GPG_KEY_PASSWORD}}
