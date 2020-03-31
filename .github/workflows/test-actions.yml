@@ -1,6 +1,8 @@
 name: Test Actions
 on:
   push:
+    paths: ['actions/**']
+
   schedule:
     - cron:  '0 * * * *'
 jobs:
