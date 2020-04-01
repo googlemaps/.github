@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/googlemaps/.github/compare/v1.2.0...v1.3.0) (2020-04-01)
+
+
+### Features
+
+* **actions/gapic:** add python2.7 to docker file ([#21](https://github.com/googlemaps/.github/issues/21)) ([5674e79](https://github.com/googlemaps/.github/commit/5674e79350af9f8f26ffcc3ce2aeab48a54beb96))
+
 # [1.2.0](https://github.com/googlemaps/.github/compare/v1.1.1...v1.2.0) (2020-03-30)
 
 
