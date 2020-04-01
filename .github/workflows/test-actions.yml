@@ -18,7 +18,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN_REPO }}
         tar_path: google-maps-routes-v1-java
         tar_strip_components: 1
-        cache_service_account: ${{ secrets.CACHE_SERVICE_ACCOUNT }}
+        cache_service_account: ${{ secrets.BAZEL_CACHE_SERVICE_ACCOUNT }}
         ignore: |
           gradle/*
           gradlew
