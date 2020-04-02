@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/googlemaps/.github/compare/v1.3.0...v1.3.1) (2020-04-02)
+
+
+### Bug Fixes
+
+* use different base image for gapic action ([#22](https://github.com/googlemaps/.github/issues/22)) ([7524237](https://github.com/googlemaps/.github/commit/75242376a3df8fb11657c461edd7472437223252))
+
 # [1.3.0](https://github.com/googlemaps/.github/compare/v1.2.0...v1.3.0) (2020-04-01)
 
 
