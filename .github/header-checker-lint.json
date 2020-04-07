@@ -1,0 +1,15 @@
+{
+    "allowedLicenses": ["Apache-2.0"],
+    "ignoreFiles": [],
+    "sourceFileExtensions": [
+        ".go",
+        ".h",
+        ".js",
+        ".m",
+        ".py",
+        ".swift",
+        ".ts",
+        "java",
+        "kt"
+    ]
+}
