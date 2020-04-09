@@ -9,7 +9,7 @@
         ".py",
         ".swift",
         ".ts",
-        "java",
-        "kt"
+        ".java",
+        ".kt"
     ]
 }
