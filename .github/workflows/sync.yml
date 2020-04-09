@@ -21,19 +21,7 @@ jobs:
           SYNCED_RUN_ID: ${{github.run_id}}
           SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GITHUB_TOKEN_REPO}}
           SYNCED_GOOGLE_MAPS_API_KEY_SERVICES: ${{secrets.GOOGLE_MAPS_API_KEY_SERVICES}}
-      - uses: google/secrets-sync-action@v1.1.2
-        name: Sync JavaScript Secrets
-        with:
-          SECRETS: |
-            ^SYNCED_NPM_TOKEN$
-          REPOSITORIES: |
-            ^googlemaps/.*-js$
-            ^googlemaps/js-.*$
-            ^googlemaps/nodejs-.*$
-            ^googlemaps/v3-utility-library$
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
-        env:
-          SYNCED_NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          SYNCED_GOOGLE_MAPS_API_KEY_WEB: ${{secrets.GOOGLE_MAPS_API_KEY_WEB}}
       - uses: google/secrets-sync-action@v1.1.2
         name: Sync Sonatype Secrets
         with:
