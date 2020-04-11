@@ -1,0 +1,49 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+}
+
+apply plugin: 'java'
+
+description = 'GRPC library for grpc-google-maps-routes-v1-java'
+group = 'com.google.maps'
+version = '0.0.0-SNAPSHOT'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+  mavenCentral()
+  mavenLocal()
+}
+
+dependencies {
+  compile 'io.grpc:grpc-stub:1.27.2'
+  compile 'io.grpc:grpc-protobuf:1.27.2'
+  compile project(':proto-google-maps-routes-v1-java')
+}
+
+sourceSets {
+  main {
+    java {
+      srcDir 'src/main/java'
+    }
+  }
+}
+
+task javadocJar(type: Jar) {
+  classifier = 'javadoc'
+  from javadoc
+}
+
+task sourcesJar(type: Jar) {
+  classifier = 'sources'
+  from sourceSets.main.allSource
+}
+
+artifacts {
+  archives javadocJar, sourcesJar
+}
+
+compileJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'UTF-8'
