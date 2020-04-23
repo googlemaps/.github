@@ -2,3 +2,4 @@ files:
 - LICENSE
 - README.md
 - .gitignore
+- .github/CODEOWNERS
