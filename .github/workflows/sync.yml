@@ -58,6 +58,7 @@ jobs:
             ^googlemaps/java-.*$
             ^googlemaps/python-.*$
             ^googlemaps/go-.*$
+            ^googlemaps/js-samples$
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
         env:
           SYNCED_BAZEL_CACHE_SERVICE_ACCOUNT: ${{secrets.BAZEL_CACHE_SERVICE_ACCOUNT}}
