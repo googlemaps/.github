@@ -2,9 +2,6 @@ name: Test Actions
 on:
   push:
     paths: ['actions/**']
-
-  schedule:
-    - cron:  '0 * * * *'
 jobs:
   gapic:
     runs-on: ubuntu-latest    
