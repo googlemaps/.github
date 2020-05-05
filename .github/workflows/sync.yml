@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: google/secrets-sync-action@v1.1.2
+      - uses: google/secrets-sync-action@v1.4.0
         name: Sync Secrets
         with:
           SECRETS: |
@@ -22,7 +22,7 @@ jobs:
           SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GITHUB_TOKEN_REPO}}
           SYNCED_GOOGLE_MAPS_API_KEY_SERVICES: ${{secrets.GOOGLE_MAPS_API_KEY_SERVICES}}
           SYNCED_GOOGLE_MAPS_API_KEY_WEB: ${{secrets.GOOGLE_MAPS_API_KEY_WEB}}
-      - uses: google/secrets-sync-action@v1.1.2
+      - uses: google/secrets-sync-action@v1.4.0
         name: Sync Sonatype Secrets
         with:
           SECRETS: |
@@ -35,7 +35,7 @@ jobs:
         env:
           SYNCED_SONATYPE_USERNAME: ${{secrets.SONATYPE_USERNAME}} # googlemaps-bot
           SYNCED_SONATYPE_PASSWORD: ${{secrets.SONATYPE_PASSWORD}}
-      - uses: google/secrets-sync-action@v1.1.2
+      - uses: google/secrets-sync-action@v1.4.0
         name: Sync GPG Secrets
         with:
           SECRETS: |
@@ -49,7 +49,7 @@ jobs:
           SYNCED_GPG_KEY_ARMOR: ${{secrets.GPG_KEY_ARMOR}}
           SYNCED_GPG_KEY_ID: ${{secrets.GPG_KEY_ID}}
           SYNCED_GPG_KEY_PASSWORD: ${{secrets.GPG_KEY_PASSWORD}}
-      - uses: google/secrets-sync-action@v1.1.2
+      - uses: google/secrets-sync-action@v1.4.0
         name: Sync Bazel Cache Secrets
         with:
           SECRETS: |
