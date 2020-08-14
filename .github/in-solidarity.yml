@@ -1,5 +1,5 @@
 rules:
   master: asdf
   slave: failure
-  whitelist: failure
+  whitelist: asdf
   blacklist: failure
