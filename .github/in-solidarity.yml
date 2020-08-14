@@ -2,4 +2,4 @@ rules:
   master: 'failure'
   slave: 'failure'
   whitelist: 'failure'
-  blacklist: 'bad'
+  blacklist: 'asdf'
