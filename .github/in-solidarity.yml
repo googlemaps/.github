@@ -4,6 +4,6 @@ rules:
   slave:
     level: failure
   whitelist:
-    level: failure
+    level: asdf
   blacklist:
     level: failure
