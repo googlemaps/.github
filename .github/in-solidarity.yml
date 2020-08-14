@@ -1,5 +1,5 @@
 rules:
   master: 'failure'
   slave: 'failure'
-  whitelist: 'failure'
+  whitelist: 'fasdf'
   blacklist: 'failure'
