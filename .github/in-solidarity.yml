@@ -1,5 +1,9 @@
 rules:
-  master: failure
-  slave: failure
-  whitelist: failure
-  blacklist: failure
+  master:
+    level: failure
+  slave:
+    level: failure
+  whitelist:
+    level: failure
+  blacklist:
+    level: failure
