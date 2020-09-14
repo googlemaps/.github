@@ -1,3 +1,4 @@
 
 from_owner:
   - dependabot
+  - dependabot[bot]
