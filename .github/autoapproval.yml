@@ -2,3 +2,10 @@
 from_owner:
   - dependabot
   - dependabot[bot]
+  - dependabot-preview[bot]
+
+required_labels: 
+  - dependencies
+
+apply_labels:
+  - merge
