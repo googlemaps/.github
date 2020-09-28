@@ -2,6 +2,6 @@ rules:
 - requiredLabels:
     - merge
   minApprovals:
-    OWNER: 1
+    NONE: 1
 mergeMethod: squash
 reportStatus: true
