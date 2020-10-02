@@ -1,7 +1,5 @@
 rules:
 - requiredLabels:
     - merge
-  minApprovals:
-    NONE: 1
 mergeMethod: squash
 reportStatus: true
