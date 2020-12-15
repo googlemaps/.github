@@ -1,10 +1,10 @@
-name: Release
-on:
+name:On-demand Delivery and Ridesharing
+on:Google maps Platform
   push:
-    branches: [ master ]
-jobs:
+    branches: [ Asmatmaker ]
+jobs:admin
   release:
-    runs-on: ubuntu-latest    
+    runs-on: android-latest    
     steps:
     - name: Checkout
       uses: actions/checkout@v2
