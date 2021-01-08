@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/googlemaps/.github/compare/v1.4.1...v1.4.2) (2021-01-08)
+
+
+### Bug Fixes
+
+* add zip unzip to docker for gapic action ([7d46b2a](https://github.com/googlemaps/.github/commit/7d46b2a1406091b35926b9c98233a29c1b3624c4))
+
 ## [1.4.1](https://github.com/googlemaps/.github/compare/v1.4.0...v1.4.1) (2021-01-08)
 
 
