@@ -16,7 +16,7 @@ GOOGLE_APPLICATION_CREDENTIALS=$(mktemp)
 
 pushd $TEMP_GIT_GOOGLEAPIS
 
-git clone --single-branch --branch "$UPSTREAM" https://github.com/googleapis/googleapis.git .
+git clone --single-branch --branch master https://github.com/googleapis/googleapis.git .
 
 set +x # WARNING: do not remove
 if [[ -n "${INPUT_CACHE_SERVICE_ACCOUNT}" ]]; then
