@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/googlemaps/.github/compare/v1.3.1...v1.3.2) (2021-01-08)
+
+
+### Bug Fixes
+
+* update gapic action image ([5f7190d](https://github.com/googlemaps/.github/commit/5f7190db4e56a85ad0c38461814078b65364ca1d))
+
 ## [1.3.1](https://github.com/googlemaps/.github/compare/v1.3.0...v1.3.1) (2020-04-02)
 
 
