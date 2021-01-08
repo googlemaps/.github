@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/googlemaps/.github/compare/v1.3.3...v1.3.4) (2021-01-08)
+
+
+### Bug Fixes
+
+* update docker image for gapic action ([#34](https://github.com/googlemaps/.github/issues/34)) ([6a2fb67](https://github.com/googlemaps/.github/commit/6a2fb6792d5c89c0aa289bfed43de5ca9b2aae4f))
+
 ## [1.3.3](https://github.com/googlemaps/.github/compare/v1.3.2...v1.3.3) (2021-01-08)
 
 
