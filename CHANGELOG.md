@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/googlemaps/.github/compare/v1.3.2...v1.3.3) (2021-01-08)
+
+
+### Bug Fixes
+
+* update image path ([#33](https://github.com/googlemaps/.github/issues/33)) ([28d43f6](https://github.com/googlemaps/.github/commit/28d43f6067378e3a5e2688dc169c4c07409ce2e6))
+
 ## [1.3.2](https://github.com/googlemaps/.github/compare/v1.3.1...v1.3.2) (2021-01-08)
 
 
