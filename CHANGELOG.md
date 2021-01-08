@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/googlemaps/.github/compare/v1.4.0...v1.4.1) (2021-01-08)
+
+
+### Bug Fixes
+
+* googleapis branch is still master... ([40d3794](https://github.com/googlemaps/.github/commit/40d3794566ab280dc2322f58733cf21017e7e9ce))
+
 # [1.4.0](https://github.com/googlemaps/.github/compare/v1.3.4...v1.4.0) (2021-01-08)
 
 
