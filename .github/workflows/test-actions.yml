@@ -11,7 +11,7 @@ jobs:
     - name: Run the gapic action
       uses: ./actions/gapic
       with:
-        target: //google/maps/routes/v1:google-maps-routes-v1-java-postprocess
+        target: //google/maps/routes/v1:google-maps-routes-v1-java
         github_token: ${{ secrets.GITHUB_TOKEN_REPO }}
         tar_path: google-maps-routes-v1-java
         tar_strip_components: 1
