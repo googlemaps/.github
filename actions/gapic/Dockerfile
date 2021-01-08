@@ -1,5 +1,5 @@
-FROM l.gcr.io/google/bazel:latest 
-# https://github.com/GoogleCloudPlatform/container-definitions/tree/master/ubuntu1604_bazel
+FROM marketplace.gcr.io/google/rbe-ubuntu18-04:latest
+# https://github.com/GoogleCloudPlatform/container-definitions/tree/master
 
 COPY entrypoint.sh /entrypoint.sh
 
