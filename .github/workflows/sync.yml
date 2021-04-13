@@ -16,10 +16,10 @@ jobs:
             ^SYNCED_
           REPOSITORIES: |
             ^googlemaps
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+          GITHUB_TOKEN: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
         env:
           SYNCED_RUN_ID: ${{github.run_id}}
-          SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GITHUB_TOKEN_REPO}}
+          SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GOOGLEMAPS_BOT_REPO_TOKEN}}
           SYNCED_GOOGLE_MAPS_API_KEY_SERVICES: ${{secrets.GOOGLE_MAPS_API_KEY_SERVICES}}
           SYNCED_GOOGLE_MAPS_API_KEY_WEB: ${{secrets.GOOGLE_MAPS_API_KEY_WEB}}
       - uses: google/secrets-sync-action@v1.4.0
@@ -31,7 +31,7 @@ jobs:
             ^googlemaps/java-.*$
             ^googlemaps/android-.*$
             ^googlemaps/google-maps-services-java$
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+          GITHUB_TOKEN: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
         env:
           SYNCED_SONATYPE_USERNAME: ${{secrets.SONATYPE_USERNAME}} # googlemaps-bot
           SYNCED_SONATYPE_PASSWORD: ${{secrets.SONATYPE_PASSWORD}}
@@ -44,7 +44,7 @@ jobs:
             ^googlemaps/java-.*$
             ^googlemaps/android-.*$
             ^googlemaps/google-maps-services-java$
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+          GITHUB_TOKEN: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
         env:
           SYNCED_GPG_KEY_ARMOR: ${{secrets.GPG_KEY_ARMOR}}
           SYNCED_GPG_KEY_ID: ${{secrets.GPG_KEY_ID}}
@@ -59,7 +59,7 @@ jobs:
             ^googlemaps/python-.*$
             ^googlemaps/go-.*$
             ^googlemaps/js-samples$
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_REPO }}
+          GITHUB_TOKEN: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
         env:
           SYNCED_BAZEL_CACHE_SERVICE_ACCOUNT: ${{secrets.BAZEL_CACHE_SERVICE_ACCOUNT}}
           SYNCED_BAZEL_CACHE_BUCKET: geo-devrel-bazel-cache
