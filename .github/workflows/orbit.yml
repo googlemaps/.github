@@ -1,7 +1,7 @@
 name: Orbit.love
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "* */12 * * *"
   push:
 jobs:
   build:
@@ -29,7 +29,7 @@ jobs:
         - google-roads-api
         - google-maps-timezone
     steps:
-      - run: npx @orbit-love/stackoverflow --questions --hours=2400 --tag "${{ matrix.tag }}"
+      - run: npx @orbit-love/stackoverflow --questions --hours=24 --tag "${{ matrix.tag }}"
         env:
           STACK_APPS_KEY: ${{ secrets.STACK_APPS_KEY}}
           ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY}}
