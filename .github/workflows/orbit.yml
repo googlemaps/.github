@@ -1,0 +1,40 @@
+name: Orbit.love
+on:
+  schedule:
+    - cron: "* */12 * * *"
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tag:
+        - google-maps
+        - google-maps-android-api-2
+        - google-places-android-api
+        - google-maps-sdk-ios
+        - google-maps-places-ios
+        - google-maps-api-3
+        - google-maps-api-3, google-places-api
+        - google-static-maps
+        - google-street-view
+        - google-places-api
+        - google-maps-embed
+        - google-maps-urls
+        - google-direction
+        - google-distancematrix-api
+        - google-elevation-api
+        - google-geocoding-api
+        - google-geolocation
+        - google-roads-api
+        - google-maps-timezone
+    steps:
+      - run: npx @orbit-love/stackoverflow --questions --hours=24 --tag "${{ matrix.tag }}"
+        env:
+          STACK_APPS_KEY: ${{ secrets.STACK_APPS_KEY}}
+          ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY}}
+          ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID}}
+          NODE_OPTIONS: "--unhandled-rejections=strict"
