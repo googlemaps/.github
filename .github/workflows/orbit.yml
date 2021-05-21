@@ -41,7 +41,7 @@ jobs:
   youtube:
     runs-on: ubuntu-latest
     steps:
-      - run: npx @orbit-love/youtube --comments--hours=24
+      - run: npx @orbit-love/youtube --comments --hours=24
         env:
           NODE_OPTIONS: "--unhandled-rejections=strict"
           ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY}}
