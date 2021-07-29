@@ -7,3 +7,6 @@ rules:
     level: failure
   blacklist:
     level: failure
+ignore:
+ - dist/
+ - .github/
