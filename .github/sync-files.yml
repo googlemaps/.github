@@ -11,7 +11,6 @@ group:
       googlemaps/js-markermanager
       googlemaps/js-three
       googlemaps/js-api-loader
-      googlemaps/google-maps-services
       googlemaps/js-polyline-codec
       googlemaps/js-jest-mocks
       googlemaps/js-types
