@@ -17,5 +17,4 @@ group:
       googlemaps/js-api-loader
       googlemaps/js-polyline-codec
       googlemaps/js-jest-mocks
-      googlemaps/js-types
       googlemaps/js-markerclustererplus
