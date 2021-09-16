@@ -6,7 +6,6 @@ group:
       - source: sync-files/js/.releaserc
         dest: .releaserc
     repos: |
-      # googlemaps/js-samples   
       googlemaps/js-ogc       
       googlemaps/js-markerwithlabel   
       googlemaps/js-markermanager     
