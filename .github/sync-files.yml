@@ -1,0 +1,19 @@
+group:
+  # JavaScript
+  - files:
+      - source: sync-files/js/.github/
+        dest: .github/
+      - source: sync-files/js/.releaserc
+        dest: .releaserc
+    repos: |
+      # googlemaps/js-samples   
+      googlemaps/js-ogc       
+      googlemaps/js-markerwithlabel   
+      googlemaps/js-markermanager     
+      googlemaps/js-three     
+      googlemaps/js-api-loader
+      googlemaps/google-maps-services
+      googlemaps/js-polyline-codec
+      googlemaps/js-jest-mocks
+      googlemaps/js-types     
+      googlemaps/js-markerclustererplus

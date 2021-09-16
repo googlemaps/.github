@@ -1,0 +1,23 @@
+name: Sync Files
+on:
+  push:
+    branches:
+      - master
+      - main
+  schedule:
+    - cron: "0 14 * * MON"
+  workflow_dispatch:
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@master
+      - name: Run GitHub File Sync
+        uses: BetaHuhn/repo-file-sync-action@a8d5c6efadcb601ab84a5fe68f1e9669f9c3a999
+        with:
+          GH_PAT: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
+          COMMIT_PREFIX: "chore: "
+          OVERWRITE_EXISTING_PR: true
+          CONFIG_PATH: .github/sync-files.yml
+          DRY_RUN: true
