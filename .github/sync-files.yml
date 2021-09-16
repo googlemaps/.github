@@ -6,13 +6,13 @@ group:
       - source: sync-files/js/.releaserc
         dest: .releaserc
     repos: |
-      googlemaps/js-ogc       
-      googlemaps/js-markerwithlabel   
-      googlemaps/js-markermanager     
-      googlemaps/js-three     
+      googlemaps/js-ogc
+      googlemaps/js-markerwithlabel
+      googlemaps/js-markermanager
+      googlemaps/js-three
       googlemaps/js-api-loader
       googlemaps/google-maps-services
       googlemaps/js-polyline-codec
       googlemaps/js-jest-mocks
-      googlemaps/js-types     
+      googlemaps/js-types
       googlemaps/js-markerclustererplus
