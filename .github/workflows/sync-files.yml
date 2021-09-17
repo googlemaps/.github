@@ -21,3 +21,6 @@ jobs:
           OVERWRITE_EXISTING_PR: true
           CONFIG_PATH: .github/sync-files.yml
           BRANCH_PREFIX: file-sync
+          PR_LABELS: |
+            file-sync
+            merge
