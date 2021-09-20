@@ -18,6 +18,7 @@ group:
       googlemaps/js-polyline-codec
       googlemaps/js-jest-mocks
       googlemaps/js-markerclustererplus
+      googlemaps/react-wrapper
   # Browser only JavaScript files
   - files:
       - source: sync-files/js/.babelrc
