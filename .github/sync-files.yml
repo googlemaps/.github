@@ -3,6 +3,9 @@ group:
   - files:
       - source: sync-files/js/.github/
         dest: .github/
+        exclude: |
+          workflows/bundlewatch.yml
+          bundlewatch.config.json
       - source: sync-files/js/.eslintignore
         dest: .eslintignore
       - source: sync-files/js/.eslintrc.json
@@ -21,6 +24,8 @@ group:
       googlemaps/react-wrapper
   # Browser only JavaScript files
   - files:
+      - source: sync-files/js/.github/
+        dest: .github/
       - source: sync-files/js/.babelrc
         dest: .babelrc
     repos: |
