@@ -5,6 +5,7 @@
     }
   ],
   "ci": {
-    "trackBranches": ["main"]
+    "trackBranches": ["main"],
+    "repoBranchBase": "main"
   }
 }
