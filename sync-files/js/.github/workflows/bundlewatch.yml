@@ -31,3 +31,4 @@ jobs:
           build-script: npm i
           bundlewatch-github-token: ${{ secrets.BUNDLEWATCH_GITHUB_TOKEN }}
           bundlewatch-config: .github/bundlewatch.config.json
+          branch-base: main
