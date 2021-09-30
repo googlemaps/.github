@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/googlemaps/.github/compare/v1.4.2...v1.5.0) (2021-09-30)
+
+
+### Features
+
+* add security.md to all repos ([#41](https://github.com/googlemaps/.github/issues/41)) ([e8cc06a](https://github.com/googlemaps/.github/commit/e8cc06a1774184cb43ccde3f15a33c0c3af678b9))
+
 ## [1.4.2](https://github.com/googlemaps/.github/compare/v1.4.1...v1.4.2) (2021-01-08)
 
 
