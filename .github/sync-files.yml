@@ -79,11 +79,20 @@ group:
   - files:
       - source: sync-files/android/.github/
         dest: .github/
-      - source: sync-files/android/.releaserc
+      - source: sync-files/android/.lib_releaserc
         dest: .releaserc
     repos: |
       googlemaps/android-maps-ktx
       googlemaps/android-maps-rx
       googlemaps/android-maps-utils
       googlemaps/android-places-ktx
+  # Android Plugins
+  - files:
+      - source: sync-files/android/.github/
+        dest: .github/
+        exclude: |
+          workflows/release.yml
+      - source: sync-files/android/.plugin_releaserc
+        dest: .releaserc
+    repos: |
       googlemaps/android-v3-migration
