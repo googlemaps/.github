@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/googlemaps/.github/compare/v1.5.0...v1.6.0) (2021-10-04)
+
+
+### Features
+
+* Add Android lib files. ([#42](https://github.com/googlemaps/.github/issues/42)) ([c739696](https://github.com/googlemaps/.github/commit/c739696ce53ac72cde96dd2a25cf1d0f21ecb3a0))
+
 # [1.5.0](https://github.com/googlemaps/.github/compare/v1.4.2...v1.5.0) (2021-09-30)
 
 
