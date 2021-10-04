@@ -87,4 +87,3 @@ group:
       googlemaps/android-maps-utils
       googlemaps/android-places-ktx
       googlemaps/android-v3-migration
-      # Exclude Android sample repos
