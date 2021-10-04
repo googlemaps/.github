@@ -45,6 +45,7 @@ group:
     # gh repo list googlemaps --public --source --no-archived  --json name | jq '.[] | .name'
     repos: |
       googlemaps/.github
+      googlemaps/android-v3-migration
       googlemaps/android-maps-ktx
       googlemaps/android-maps-rx
       googlemaps/android-maps-utils
@@ -74,3 +75,16 @@ group:
       googlemaps/playablelocations-proxy
       googlemaps/react-wrapper
       googlemaps/semantic-release-config
+  # Android Library files
+  - files:
+      - source: sync-files/android/.github/
+        dest: .github/
+      - source: sync-files/android/.releaserc
+        dest: .releaserc
+    repos: |
+      googlemaps/android-maps-ktx
+      googlemaps/android-maps-rx
+      googlemaps/android-maps-utils
+      googlemaps/android-places-ktx
+      googlemaps/android-v3-migration
+      # Exclude Android sample repos
