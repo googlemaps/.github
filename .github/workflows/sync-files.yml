@@ -17,6 +17,8 @@ jobs:
         uses: BetaHuhn/repo-file-sync-action@a8d5c6efadcb601ab84a5fe68f1e9669f9c3a999
         with:
           GH_PAT: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
+          GIT_EMAIL: "googlemaps-bot@google.com"
+          GIT_USERNAME: "googlemaps-bot"
           COMMIT_PREFIX: "chore: "
           OVERWRITE_EXISTING_PR: true
           CONFIG_PATH: .github/sync-files.yml
