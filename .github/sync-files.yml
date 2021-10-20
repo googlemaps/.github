@@ -75,17 +75,24 @@ group:
       googlemaps/playablelocations-proxy
       googlemaps/react-wrapper
       googlemaps/semantic-release-config
-  # Android Library files
+  # Android Library files (Groovy)
   - files:
       - source: sync-files/android/.github/
         dest: .github/
-      - source: sync-files/android/.lib_releaserc
+      - source: sync-files/android/.lib_releaserc_groovy
         dest: .releaserc
     repos: |
       googlemaps/android-maps-ktx
-      googlemaps/android-maps-rx
       googlemaps/android-maps-utils
       googlemaps/android-places-ktx
+  # Android Library files (KTS)
+  - files:
+      - source: sync-files/android/.github/
+        dest: .github/
+      - source: sync-files/android/.lib_releaserc_kts
+        dest: .releaserc
+    repos: |
+      googlemaps/android-maps-rx
   # Android Plugins
   - files:
       - source: sync-files/android/.github/
