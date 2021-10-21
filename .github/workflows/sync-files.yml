@@ -1,9 +1,9 @@
 name: Sync Files
 on:
   push:
-    branches:
-      - master
-      - main
+    # branches:
+    #   - master
+    #   - main
   schedule:
     - cron: "0 14 * * MON"
   workflow_dispatch:
@@ -14,7 +14,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@master
       - name: Run GitHub File Sync
-        uses: BetaHuhn/repo-file-sync-action@a8d5c6efadcb601ab84a5fe68f1e9669f9c3a999
+        uses: jpoehnelt/repo-file-sync-action@43f4506549ba1a0a9986614f047e679fd2f3de9b
         with:
           GH_PAT: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
           GIT_EMAIL: "googlemaps-bot@google.com"
@@ -23,6 +23,7 @@ jobs:
           OVERWRITE_EXISTING_PR: true
           CONFIG_PATH: .github/sync-files.yml
           BRANCH_PREFIX: file-sync
+          DRY_RUN: true
           PR_LABELS: |
             file-sync
             merge
