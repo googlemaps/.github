@@ -13,16 +13,8 @@ group:
       - source: sync-files/js/.releaserc
         dest: .releaserc
     repos: |
-      googlemaps/js-api-loader
-      googlemaps/js-jest-mocks
-      googlemaps/js-markerclusterer
-      googlemaps/js-markerclustererplus
-      googlemaps/js-markermanager
-      googlemaps/js-markerwithlabel
-      googlemaps/js-ogc
-      googlemaps/js-polyline-codec
-      googlemaps/js-three
-      googlemaps/react-wrapper
+      googlemaps/js-.*
+      googlemaps/react-.*
   # Browser only JavaScript files
   - files:
       - source: sync-files/js/.github/
@@ -44,37 +36,7 @@ group:
         dest: SECURITY.md
     # gh repo list googlemaps --public --source --no-archived  --json name | jq '.[] | .name'
     repos: |
-      googlemaps/.github
-      googlemaps/android-v3-migration
-      googlemaps/android-maps-ktx
-      googlemaps/android-maps-rx
-      googlemaps/android-maps-utils
-      googlemaps/android-on-demand-rides-deliveries-samples
-      googlemaps/android-places-demos
-      googlemaps/android-places-ktx
-      googlemaps/android-samples
-      googlemaps/deck.gl-demos
-      googlemaps/go-routespreferred
-      googlemaps/google-maps-ios-utils
-      googlemaps/google-maps-services-java
-      googlemaps/google-maps-services-js
-      googlemaps/google-maps-services-python
-      googlemaps/js-api-loader
-      googlemaps/js-jest-mocks
-      googlemaps/js-markerclusterer
-      googlemaps/js-markerclustererplus
-      googlemaps/js-markermanager
-      googlemaps/js-markerwithlabel
-      googlemaps/js-ogc
-      googlemaps/js-polyline-codec
-      googlemaps/js-samples
-      googlemaps/js-three
-      googlemaps/js-types
-      googlemaps/maps-sdk-for-ios-samples
-      googlemaps/openapi-specification
-      googlemaps/playablelocations-proxy
-      googlemaps/react-wrapper
-      googlemaps/semantic-release-config
+      googlemaps/.*
   # Android Library files (Groovy)
   - files:
       - source: sync-files/android/.github/
