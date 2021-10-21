@@ -14,7 +14,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@master
       - name: Run GitHub File Sync
-        uses: jpoehnelt/repo-file-sync-action@43f4506549ba1a0a9986614f047e679fd2f3de9b
+        uses: jpoehnelt/repo-file-sync-action
         with:
           GH_PAT: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
           GIT_EMAIL: "googlemaps-bot@google.com"
