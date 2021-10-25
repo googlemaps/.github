@@ -22,6 +22,7 @@ group:
       googlemaps/js-ogc
       googlemaps/js-polyline-codec
       googlemaps/js-three
+      googlemaps/js-url-signature
       googlemaps/react-wrapper
   # Browser only JavaScript files
   - files:
@@ -38,6 +39,7 @@ group:
       googlemaps/js-ogc
       googlemaps/js-polyline-codec
       googlemaps/js-three
+      googlemaps/js-url-signature
   # Add SECURITY.md to all repositories
   - files:
       - source: SECURITY.md
@@ -70,6 +72,7 @@ group:
       googlemaps/js-samples
       googlemaps/js-three
       googlemaps/js-types
+      googlemaps/js-url-signature
       googlemaps/maps-sdk-for-ios-samples
       googlemaps/openapi-specification
       googlemaps/playablelocations-proxy
