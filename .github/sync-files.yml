@@ -32,6 +32,8 @@ group:
           workflows/bundlewatch.yml
           bundlewatch.config.json
           blunderbuss.yml
+          CODEOWNERS
+          dependabot.yml
       - source: sync-files/js/.eslintignore
         dest: .eslintignore
       - source: sync-files/js/.eslintrc.json
