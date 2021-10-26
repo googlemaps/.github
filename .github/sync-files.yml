@@ -122,3 +122,12 @@ group:
         dest: .releaserc
     repos: |
       googlemaps/android-v3-migration
+# Java Libraries
+  - files:
+      - source: sync-files/java/.github/
+        dest: .github/
+      - source: sync-files/java/.releaserc
+        dest: .releaserc
+    repos: |
+      googlemaps/google-maps-services-java
+      googlemaps/java-fleetengine-auth
