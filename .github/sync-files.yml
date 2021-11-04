@@ -131,3 +131,10 @@ group:
     repos: |
       googlemaps/google-maps-services-java
       googlemaps/java-fleetengine-auth
+# @googlemaps/eng owned
+  - files:
+      - source: sync-files/eng/.github/CODEOWNERS
+        dest: .github/CODEOWNERS
+    repos: |
+      googlemaps/fleet-debugger
+      googlemaps/java-fleetengine-auth
