@@ -22,6 +22,7 @@ jobs:
           SYNCED_GITHUB_TOKEN_REPO: ${{secrets.GOOGLEMAPS_BOT_REPO_TOKEN}}
           SYNCED_GOOGLE_MAPS_API_KEY_SERVICES: ${{secrets.GOOGLE_MAPS_API_KEY_SERVICES}}
           SYNCED_GOOGLE_MAPS_API_KEY_WEB: ${{secrets.GOOGLE_MAPS_API_KEY_WEB}}
+      - run: sleep 30s
       - uses: google/secrets-sync-action@v1.4.0
         name: Sync Sonatype Secrets
         with:
@@ -35,6 +36,7 @@ jobs:
         env:
           SYNCED_SONATYPE_USERNAME: ${{secrets.SONATYPE_USERNAME}} # googlemaps-bot
           SYNCED_SONATYPE_PASSWORD: ${{secrets.SONATYPE_PASSWORD}}
+      - run: sleep 30s
       - uses: google/secrets-sync-action@v1.4.0
         name: Sync GPG Secrets
         with:
@@ -49,6 +51,7 @@ jobs:
           SYNCED_GPG_KEY_ARMOR: ${{secrets.GPG_KEY_ARMOR}}
           SYNCED_GPG_KEY_ID: ${{secrets.GPG_KEY_ID}}
           SYNCED_GPG_KEY_PASSWORD: ${{secrets.GPG_KEY_PASSWORD}}
+      - run: sleep 30s
       - uses: google/secrets-sync-action@v1.4.0
         name: Sync Bazel Cache Secrets
         with:
