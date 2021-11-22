@@ -24,12 +24,13 @@ group:
       googlemaps/js-three
       googlemaps/js-url-signature
       googlemaps/react-wrapper
-    # JavaScript files
+  # fleet-debugger JavaScript files
   - files:
       - source: sync-files/js/.github/
         dest: .github/
         exclude: |
           workflows/bundlewatch.yml
+          workflows/package.yml
           bundlewatch.config.json
           blunderbuss.yml
           CODEOWNERS
