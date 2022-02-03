@@ -67,6 +67,7 @@ group:
     repos: |
       googlemaps/.github
       googlemaps/android-v3-migration
+      googlemaps/android-maps-compose
       googlemaps/android-maps-ktx
       googlemaps/android-maps-rx
       googlemaps/android-maps-utils
@@ -104,6 +105,7 @@ group:
       - source: sync-files/android/.lib_releaserc_groovy
         dest: .releaserc
     repos: |
+      googlemaps/android-maps-compose
       googlemaps/android-maps-ktx
       googlemaps/android-maps-utils
       googlemaps/android-places-ktx
