@@ -66,8 +66,13 @@ group:
         replace: false
       - source: .github/sync-repo-settings.yaml
         dest: .github/sync-repo-settings.yaml
+        replace: false
       - source: SECURITY.md
         dest: SECURITY.md
+        replace: false
+      - source: .github/workflows/dependabot.yml
+        dest: .github/workflows/dependabot.yml
+        replace: true
     # gh repo list googlemaps --public --source --no-archived  --json name -L 100  | jq '.[] | .name' | sort | xargs -n 1 -I{} echo "googlemaps/{}"
     repos: |
       googlemaps/android-maps-compose
