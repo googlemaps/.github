@@ -70,7 +70,6 @@ group:
         dest: SECURITY.md
     # gh repo list googlemaps --public --source --no-archived  --json name -L 100  | jq '.[] | .name' | sort | xargs -n 1 -I{} echo "googlemaps/{}"
     repos: |
-      googlemaps/.github
       googlemaps/android-maps-compose
       googlemaps/android-maps-ktx
       googlemaps/android-maps-rx
