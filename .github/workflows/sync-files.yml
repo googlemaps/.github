@@ -25,4 +25,4 @@ jobs:
           BRANCH_PREFIX: file-sync
           PR_LABELS: |
             file-sync
-            merge
+            automerge
