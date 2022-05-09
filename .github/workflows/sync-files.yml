@@ -14,7 +14,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@master
       - name: Run GitHub File Sync
-        uses: BetaHuhn/repo-file-sync-action@a8d5c6efadcb601ab84a5fe68f1e9669f9c3a999
+        uses: BetaHuhn/repo-file-sync-action@878d649c33c834dc1eff4c00f7fcf16bf281eb63 # v1.17.15 February 2022
         with:
           GH_PAT: ${{ secrets.GOOGLEMAPS_BOT_REPO_TOKEN }}
           GIT_EMAIL: "googlemaps-bot@google.com"
