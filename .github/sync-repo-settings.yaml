@@ -24,7 +24,6 @@ branchProtectionRules:
   requiresStrictStatusChecks: false
   requiredStatusCheckContexts:
     - 'cla/google'
-    - 'test'
   requiredApprovingReviewCount: 1
   requiresCodeOwnerReviews: true
 - pattern: master
@@ -32,7 +31,6 @@ branchProtectionRules:
   requiresStrictStatusChecks: false
   requiredStatusCheckContexts:
     - 'cla/google'
-    - 'test'
   requiredApprovingReviewCount: 1
   requiresCodeOwnerReviews: true
 permissionRules:
