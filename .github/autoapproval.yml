@@ -9,4 +9,3 @@ required_labels:
 
 apply_labels:
   - merge
-  - automerge
