@@ -16,7 +16,6 @@ group:
       googlemaps/js-api-loader
       googlemaps/js-jest-mocks
       googlemaps/js-markerclusterer
-      googlemaps/js-markerclustererplus
       googlemaps/js-markermanager
       googlemaps/js-markerwithlabel
       googlemaps/js-ogc
@@ -52,7 +51,6 @@ group:
     repos: |
       googlemaps/js-api-loader
       googlemaps/js-markerclusterer
-      googlemaps/js-markerclustererplus
       googlemaps/js-markermanager
       googlemaps/js-markerwithlabel
       googlemaps/js-ogc
