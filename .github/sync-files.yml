@@ -61,6 +61,9 @@ group:
       googlemaps/js-url-signature
   # All repositories
   - files:
+      - source: .github/CODEOWNERS
+        dest: .github/CODEOWNERS
+        replace: false
       - source: .github/sync-repo-settings.yaml
         dest: .github/sync-repo-settings.yaml
         replace: false
