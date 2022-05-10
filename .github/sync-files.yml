@@ -88,7 +88,6 @@ group:
       googlemaps/eslint-config-googlemaps
       googlemaps/eslint-plugin-googlemaps
       googlemaps/fleet-debugger
-      googlemaps/go-routespreferred-samples
       googlemaps/google-maps-ios-utils
       googlemaps/google-maps-services-go
       googlemaps/google-maps-services-java
@@ -98,12 +97,9 @@ group:
       googlemaps/ios-on-demand-rides-deliveries-samples
       googlemaps/java-fleetengine-auth
       googlemaps/java-on-demand-rides-deliveries-stub-provider
-      googlemaps/java-routespreferred
-      googlemaps/java-routespreferred-samples
       googlemaps/js-api-loader
       googlemaps/js-github-policy-bot
       googlemaps/js-jest-mocks
-      googlemaps/js-map-loader
       googlemaps/js-markerclusterer
       googlemaps/js-markermanager
       googlemaps/js-markerwithlabel
@@ -120,7 +116,6 @@ group:
       googlemaps/openapi-specification
       googlemaps/react-routing-playground
       googlemaps/react-wrapper
-      googlemaps/roads-api-samples
       googlemaps/semantic-release-config
       googlemaps/url-signing
   # Android Library files (Groovy)
