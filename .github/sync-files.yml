@@ -53,6 +53,7 @@ group:
         dest: .github/workflows/dependabot.yml
         replace: true
     # gh repo list googlemaps --public --source --no-archived  --json name -L 100  | jq '.[] | .name' | sort | xargs -n 1 -I{} echo "googlemaps/{}"
+    # excluding googlemaps/.github, googlemaps/on-demand-rides-deliveries-samples
     repos: |
       googlemaps/android-maps-compose
       googlemaps/android-maps-ktx
@@ -93,7 +94,6 @@ group:
       googlemaps/js-url-signature
       googlemaps/last-mile-fleet-solution-samples
       googlemaps/maps-sdk-for-ios-samples
-      googlemaps/on-demand-rides-deliveries-samples
       googlemaps/openapi-specification
       googlemaps/react-routing-playground
       googlemaps/react-wrapper
