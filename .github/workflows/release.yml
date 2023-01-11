@@ -4,14 +4,14 @@ on:
     branches: [ master ]
 jobs:
   release:
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.SYNCED_GITHUB_TOKEN_REPO }} 
+        token: ${{ secrets.SYNCED_GITHUB_TOKEN_REPO }}
     - name: Semantic Release
-      uses: cycjimmy/semantic-release-action@v2
+      uses: cycjimmy/semantic-release-action@v3
       with:
         extra_plugins: |
           "@semantic-release/commit-analyzer"
