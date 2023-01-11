@@ -12,5 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# https://github.com/zeke/semantic-pull-requests#configuration
-titleOnly: true
+# https://github.com/Ezard/semantic-prs#configuration-options
+# The values allowed for the "type" part of the PR title/commit message. e.g. for a PR title/commit message of "feat: add some stuff", the type would be "feat"
+# The merged commit will trigger semantic release actions governed by https://github.com/semantic-release/commit-analyzer/blob/master/lib/default-release-rules.js
+types: # default: feat | fix | docs | style | refactor | perf | test | build | ci | chore | revert
+  - build # Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+  - chore # Other changes that do not affect the developer interface
+  - docs # Documentation only changes, triggers PATCH version release
+  - feat # A new feature, triggers MINOR version release
+  - fix #  A bug fix, triggers PATCH version release
+  - perf # A code change that improves performance, triggers PATCH version release
+  - refactor # A code change that neither fixes a bug nor adds a feature
+  - revert # Reverts a previous commit
+
+# Allows a custom URL for the "Details" link (which appears next to the success/failure message from the app) to be specified
+targetUrl: https://github.com/googlemaps/.github/blob/master/.github/semantic.yml # default: https://github.com/Ezard/semantic-prs
