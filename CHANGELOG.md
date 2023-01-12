@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/googlemaps/.github/compare/v1.6.0...v1.6.1) (2023-01-12)
+
+
+### Reverts
+
+* "chore: add secret sync for Android keys ([#57](https://github.com/googlemaps/.github/issues/57))" ([#58](https://github.com/googlemaps/.github/issues/58)) ([6e74368](https://github.com/googlemaps/.github/commit/6e74368a1640c0152553a9da8c7078b40ad2df09))
+
 # [1.6.0](https://github.com/googlemaps/.github/compare/v1.5.0...v1.6.0) (2021-10-04)
 
 
