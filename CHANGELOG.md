@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/googlemaps/.github/compare/v1.6.2...v1.6.3) (2023-03-31)
+
+
+### Bug Fixes
+
+* removes dependabot.yml syncing ([86ac851](https://github.com/googlemaps/.github/commit/86ac851e3ed49e8bcc2f6db870c52b3213ca2aae))
+
 ## [1.6.2](https://github.com/googlemaps/.github/compare/v1.6.1...v1.6.2) (2023-03-31)
 
 
