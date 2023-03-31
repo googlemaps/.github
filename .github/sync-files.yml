@@ -50,9 +50,6 @@ group:
       - source: SECURITY.md
         dest: SECURITY.md
         replace: false
-      - source: .github/workflows/dependabot.yml
-        dest: .github/workflows/dependabot.yml
-        replace: false
     # gh repo list googlemaps --public --source --no-archived  --json name -L 100  | jq '.[] | .name' | sort | xargs -n 1 -I{} echo "googlemaps/{}"
     # excluding googlemaps/.github, googlemaps/on-demand-rides-deliveries-samples
     repos: |
