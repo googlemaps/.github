@@ -67,7 +67,6 @@ group:
       googlemaps/angular-on-demand-rides-deliveries-samples
       googlemaps/codelab-maps-platform-101-swift
       googlemaps/codelab-places-101-android-kotlin
-      googlemaps/eslint-config-googlemaps
       googlemaps/eslint-plugin-googlemaps
       googlemaps/fleet-debugger
       googlemaps/google-maps-ios-utils
