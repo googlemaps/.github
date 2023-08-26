@@ -1,23 +1,38 @@
-# Google Maps Platform
+# Google Maps Platform Tools
 
-Read more about Google Maps Platform at https://cloud.google.com/maps-platform.
+This GitHub organization contains open source libraries and tools that ease and augment the use of [Google Maps Platform](https://developers.google.com/maps).
 
-## Products
+## Client libraries
 
-Explore products at https://cloud.google.com/maps-platform/products.
+Call Web Services APIs from your preferred language:
 
-## Pricing
+- [Go](https://github.com/googlemaps/google-maps-services-go)
+- [Java](https://github.com/googlemaps/google-maps-services-java)
+- [Node.js](https://github.com/googlemaps/google-maps-services-js)
+- [Python](https://github.com/googlemaps/google-maps-services-python)
 
-Learn about pricing at https://cloud.google.com/maps-platform/pricing.
+## Utility libraries
 
-## Documentation
+Extend Maps SDKs functionality with utility libraries for common needs such as marker clustering, importing KML and GeoJSON, and polyline encoding and decoding.
 
-Explore, learn, and build with comprehensive documentation, sample code, example apps, and more at https://developers.google.com/maps/documentation.
+- [Extended Component Library](https://github.com/googlemaps/extended-component-library): Maps, Place picker, Place overview, and Route overview
+- [JavaScript API Loader](https://github.com/googlemaps/js-api-loader)
+- [JavaScript Advanced Markers Utility Library](https://github.com/googlemaps/js-adv-markers-utils)
+- [JavaScript Marker Clusterer](https://github.com/googlemaps/js-markerclusterer), [Polyline Encoder](https://github.com/googlemaps/js-polyline-codec), [ThreeJS Overlay View](https://github.com/googlemaps/js-three)
+- [JavaScript URL Signing](https://github.com/googlemaps/js-url-signature) for Maps Static and Street View Static APIs
+- Utility Libraries [for Maps SDK for Android](https://github.com/googlemaps/android-maps-utils), [for Maps SDK for iOS](https://github.com/googlemaps/google-maps-ios-utils)
 
-## Blog
+## Languages and frameworks support
 
-Get product updates, customer stories, and tips and tricks on Google Maps Platform at https://cloud.google.com/blog/products/maps-platform.
+Get idomatic support for the languages and frameworks you use.
 
-## Feedback
+- [JavaScript Jest Mocks](https://github.com/googlemaps/js-jest-mocks)
+- [JavaScript Types](https://github.com/googlemaps/js-types) and [TypeScript Guards](https://github.com/googlemaps/js-typescript-guards)
+- [React Wrapper for Maps JavaScript API](https://github.com/googlemaps/react-wrapper)
+- Kotlin Extensions [for Maps SDK for Android](https://github.com/googlemaps/android-maps-ktx), [for Places SDK for Android](https://github.com/googlemaps/android-places-ktx)
+- [Maps Compose](https://github.com/googlemaps/android-maps-compose), Jetpack Compose components for the Maps SDK for Android
+- [Firebase Extensions for Google Maps Platform](https://github.com/googlemaps/gmp-firebase-extensions)
 
-Take a moment to fill out this [short survey](https://forms.gle/wYuzN6UibnFj7ZL29) to help improve our products.
+## Code samples
+
+Find demo apps and sample code at [github.com/googlemaps-samples](https://github.com/googlemaps-samples).
