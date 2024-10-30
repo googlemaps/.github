@@ -2,8 +2,7 @@
 # Registry, and deploy it to GKE when there is a push to the "master"
 # branch.
 # To configure this workflow:
-#
-# 1. Enable the following Google Cloud APIs:
+#1. Enable the following Google Cloud APIs:
 #
 #    - Artifact Registry (artifactregistry.googleapis.com)
 #    - Google Kubernetes Engine (container.googleapis.com)
@@ -29,9 +28,8 @@
 #    https://cloud.google.com/iam/docs/manage-access-other-resources
 #
 # 5. Change the values in the "env" block to match your values.
-
 name: 'Build and Deploy to GKE'
-
+/.run-name: 
 on:
   push:
     branches:
