@@ -1,4 +1,4 @@
-# Google Maps Platform Tools
+## Google Maps Platform Tools
 
 This GitHub organization contains open source libraries and tools that ease and augment the use of [Google Maps Platform](https://developers.google.com/maps).
 
