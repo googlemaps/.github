@@ -8,3 +8,4 @@ respond within 5 working days of your report on g.co/vulnz.
 To contact us about other bugs, please open an issue on GitHub.
 
 > **Note**: This file is synchronized from the https://github.com/googlemaps/.github repository.
+> revert-67523e0064b9c987ecc01f3d6e647d8d0d969999
