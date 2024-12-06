@@ -4,6 +4,7 @@
 <!--repo-specific badges-->
 ![Alpha release](https://img.shields.io/badge/release-alpha-orange)
 ![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg) <!-- opt branch -->
+![Tests/Build Status](https://github.com/googlemaps/REPO/workflows/Test/badge.svg)
 ![Stable](https://img.shields.io/badge/stability-stable-green)
 
 <!--constant badges-->
@@ -35,7 +36,7 @@ Link to the same app that demonstrates this library, if it exists (often a folde
 
 ## Documentation
 
-See the [reference documentation][Dokka/Javadoc] for a full list of classes and their methods.
+See the [documentation] for a full list of classes and their methods.
 
 ## Usage
 
@@ -88,8 +89,9 @@ You can also discuss this library on our [Discord server].
 <!--repo-specific anchor links-->
 [api-key]: https://developers.google.com/maps/documentation/android-sdk/get-api-key
 [devsite-guide]: https://developers.google.com/maps/documentation/android-sdk/utility
+[gmp-start]: https://console.cloud.google.com/google/maps-apis/start
 [maps-sdk]: https://developers.google.com/maps/documentation/android-sdk
-[Dokka/Javadoc]: https://googlemaps.github.io/REPO
+[documentation]: https://googlemaps.github.io/REPO
 [jetpack-compose]: https://developer.android.com/jetpack/compose
 [android-maps-ktx]: https://github.com/googlemaps/android-maps-ktx
 
