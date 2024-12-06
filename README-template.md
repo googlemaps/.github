@@ -1,9 +1,10 @@
 <!--android-only badges-->
-[![Maven Central](https://img.shields.io/maven-central/v/com.google.maps.android/MVN-REPO)](https://maven-badges.herokuapp.com/maven-central/com.google.maps.android/MVN-REPO) <!-- may or may not be the same as GH repo, e.g, "android-" -->
+[![Maven Central](https://img.shields.io/maven-central/v/com.google.maps.android/MVN-REPO)](https://maven-badges.herokuapp.com/maven-central/com.google.maps.android/MVN-REPO)
+<!-- MVN-REPO may or may not be the same as GH repo, e.g, "android-" -->
 
 <!--repo-specific badges-->
 ![Alpha release](https://img.shields.io/badge/release-alpha-orange)
-![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg) <!-- opt branch -->
+<!-- ![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg) -->
 ![Tests/Build Status](https://github.com/googlemaps/REPO/workflows/Test/badge.svg)
 ![Release](https://github.com/googlemaps/REPO/workflows/Release/badge.svg)
 ![Stable](https://img.shields.io/badge/stability-stable-green)
@@ -99,8 +100,10 @@ You can also discuss this library on our [Discord server].
 [code of conduct]: CODE_OF_CONDUCT.md
 [contributing guide]: CONTRIBUTING.md
 [developer community channels]: https://developers.google.com/maps/developer-community
-[Discord server]: https://discord.gg/hYsWbmk <!--chrisarriola-->
-[Discord server]: https://discord.gg/jRteCzP <!--jpoehnelt-->
+<!--chrisarriola-->
+[Discord server]: https://discord.gg/hYsWbmk
+<!--jpoehnelt-->
+[Discord server]: https://discord.gg/jRteCzP
 [file an issue]: https://github.com/googlemaps/REPO/issues/new/choose
 [pull request]: https://github.com/googlemaps/REPO/compare
 [semantic versioning]: https://semver.org
