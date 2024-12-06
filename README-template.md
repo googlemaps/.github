@@ -100,10 +100,7 @@ You can also discuss this library on our [Discord server].
 [code of conduct]: CODE_OF_CONDUCT.md
 [contributing guide]: CONTRIBUTING.md
 [developer community channels]: https://developers.google.com/maps/developer-community
-<!--chrisarriola-->
 [Discord server]: https://discord.gg/hYsWbmk
-<!--jpoehnelt-->
-[Discord server]: https://discord.gg/jRteCzP
 [file an issue]: https://github.com/googlemaps/REPO/issues/new/choose
 [pull request]: https://github.com/googlemaps/REPO/compare
 [semantic versioning]: https://semver.org
