@@ -5,11 +5,12 @@
 ![Alpha release](https://img.shields.io/badge/release-alpha-orange)
 ![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg) <!-- opt branch -->
 ![Tests/Build Status](https://github.com/googlemaps/REPO/workflows/Test/badge.svg)
+![Release](https://github.com/googlemaps/REPO/workflows/Release/badge.svg)
 ![Stable](https://img.shields.io/badge/stability-stable-green)
 
 <!--constant badges-->
 ![GitHub contributors](https://img.shields.io/github/contributors/googlemaps/REPO?color=green)
-[![Discord](https://img.shields.io/discord/676948200904589322)][Discord server]
+[![Discord](https://img.shields.io/discord/676948200904589322?color=6A7EC2&logo=discord&logoColor=ffffff)][Discord server]
 [![GitHub License](https://img.shields.io/github/license/googlemaps/REPO?color=blue)](LICENSE)
 
 # New README Template
@@ -85,7 +86,6 @@ If you find a bug, or have a feature request, please [file an issue] on GitHub. 
 
 You can also discuss this library on our [Discord server].
 
-
 <!--repo-specific anchor links-->
 [api-key]: https://developers.google.com/maps/documentation/android-sdk/get-api-key
 [devsite-guide]: https://developers.google.com/maps/documentation/android-sdk/utility
@@ -99,7 +99,8 @@ You can also discuss this library on our [Discord server].
 [code of conduct]: CODE_OF_CONDUCT.md
 [contributing guide]: CONTRIBUTING.md
 [developer community channels]: https://developers.google.com/maps/developer-community
-[Discord server]: https://discord.gg/hYsWbmk
+[Discord server]: https://discord.gg/hYsWbmk <!--chrisarriola-->
+[Discord server]: https://discord.gg/jRteCzP <!--jpoehnelt-->
 [file an issue]: https://github.com/googlemaps/REPO/issues/new/choose
 [pull request]: https://github.com/googlemaps/REPO/compare
 [semantic versioning]: https://semver.org
