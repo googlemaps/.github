@@ -76,14 +76,14 @@ This library is not a Google Maps Platform Core Service. Therefore, the Google M
 
 ## Support
 
-<!--add Google Analytics utm vars as nec-->
-This library is offered via an open source [license](LICENSE). It is not governed by the Google Maps Platform [Technical Support Services Guidelines](https://cloud.google.com/maps-platform/terms/tssg), the [SLA](https://cloud.google.com/maps-platform/terms/sla), or the [Deprecation Policy](https://cloud.google.com/maps-platform/terms) (however, any Google Maps Platform services used by the library remain subject to the Google Maps Platform Terms of Service).
+This library is offered via an open source [license](LICENSE). It is not governed by the Google Maps Platform Support [Technical Support Services Guidelines](https://cloud.google.com/maps-platform/terms/tssg), the [SLA](https://cloud.google.com/maps-platform/terms/sla), or the [Deprecation Policy](https://cloud.google.com/maps-platform/terms) (however, any Google Maps Platform services used by the library remain subject to the Google Maps Platform Terms of Service).
 
-This library adheres to [semantic versioning] to indicate when backwards-incompatible changes are introduced. Accordingly, when a library is at a version 0.x, backwards-incompatible changes may be introduced at any time.
+This library adheres to [semantic versioning] to indicate when backwards-incompatible changes are introduced. Accordingly, while the library is in version 0.x, backwards-incompatible changes may be introduced at any time.
 
-If you find a bug or have a feature request, check if someone has made a [similar inquiry] and [file a new issue] otherwise.
+If you find a bug, or have a feature request, please [file an issue] on GitHub. If you would like to get answers to technical questions from other Google Maps Platform developers, ask through one of our [developer community channels]. If you'd like to contribute, please check the [contributing guide].
 
-If you're seeking answers to technical questions from other Google Maps Platform developers, ask through one of our [developer community channels], including the Google Maps Platform [Discord server].
+You can also discuss this library on our [Discord server].
+
 
 <!--repo-specific anchor links-->
 [api-key]: https://developers.google.com/maps/documentation/android-sdk/get-api-key
@@ -98,7 +98,7 @@ If you're seeking answers to technical questions from other Google Maps Platform
 [contributing guide]: CONTRIBUTING.md
 [developer community channels]: https://developers.google.com/maps/developer-community
 [Discord server]: https://discord.gg/hYsWbmk
-[file a new issue]: https://github.com/googlemaps/REPO/issues/new/choose
+[file an issue]: https://github.com/googlemaps/REPO/issues/new/choose
 [pull request]: https://github.com/googlemaps/REPO/compare
 [semantic versioning]: https://semver.org
 [similar inquiry]: https://github.com/googlemaps/REPO/issues
