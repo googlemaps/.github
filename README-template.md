@@ -1,28 +1,36 @@
-<!--android-only badges-->
+<!--java/js-only badges-->
 [![Maven Central](https://img.shields.io/maven-central/v/com.google.maps.android/MVN-REPO)](https://maven-badges.herokuapp.com/maven-central/com.google.maps.android/MVN-REPO)
-<!-- MVN-REPO may or may not be the same as GH repo, e.g, "android-" -->
+[![npm](https://img.shields.io/npm/v/@googlemaps/NPM-REPO)](https://npmjs.com/package/@googlemaps/NPM-REPO)
+<!-- MVN-REPO or NPM-REPO may or may not be the same as GH repo, e.g, "android-" -->
+<!-- add PyPI links as nec -->
+
+<!--lifecycle badges-->
+![Alpha release](https://img.shields.io/badge/release-alpha-orange)
+<!-- add Beta and other releases as nec -->
+![Release](https://github.com/googlemaps/REPO/workflows/Release/badge.svg)
 
 <!--repo-specific badges-->
-![Alpha release](https://img.shields.io/badge/release-alpha-orange)
-<!-- ![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg) -->
-![Tests/Build Status](https://github.com/googlemaps/REPO/workflows/Test/badge.svg)
-![Release](https://github.com/googlemaps/REPO/workflows/Release/badge.svg)
 ![Stable](https://img.shields.io/badge/stability-stable-green)
+![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg)
+<!-- ![Tests/Build Status](https://github.com/googlemaps/REPO/workflows/Test/badge.svg) -->
 
 <!--constant badges-->
 ![GitHub contributors](https://img.shields.io/github/contributors/googlemaps/REPO?color=green)
+[![GitHub License](https://img.shields.io/github/license/googlemaps/REPO?color=blue)][license]
 [![Discord](https://img.shields.io/discord/676948200904589322?color=6A7EC2&logo=discord&logoColor=ffffff)][Discord server]
-[![GitHub License](https://img.shields.io/github/license/googlemaps/REPO?color=blue)](LICENSE)
 
 # New README Template
 
 ## Description
 
-This is a sample README file with the recommended sections for new libraries in the github.com/googlemaps organization. This is where you would write a single-sentence description of the project.
+This is a sample README file with the recommended sections for new libraries in the <https://github.com/googlemaps> organization. This is where you place the repo contents description.
 
 ## Requirements
 
-Prerequisites listed here
+* [Sign up with Google Maps Platform]
+* A Google Maps Platform [project] with the **PRODUCT** enabled
+* An [API key] associated with the project above
+* (others)
 
 ## Installation
 
@@ -69,7 +77,7 @@ Contributions are welcome and encouraged! If you'd like to contribute, send us a
 
 OR
 
-External contributions are not accepted for this repository. See [contributing guide] for more info.
+External contributions are not (yet) accepted for this repository. See [contributing guide] for more info.
 
 ## Terms of Service
 
@@ -79,7 +87,7 @@ This library is not a Google Maps Platform Core Service. Therefore, the Google M
 
 ## Support
 
-This library is offered via an open source [license](LICENSE). It is not governed by the Google Maps Platform Support [Technical Support Services Guidelines](https://cloud.google.com/maps-platform/terms/tssg), the [SLA](https://cloud.google.com/maps-platform/terms/sla), or the [Deprecation Policy](https://cloud.google.com/maps-platform/terms) (however, any Google Maps Platform services used by the library remain subject to the Google Maps Platform Terms of Service).
+This library is offered via an open source [license]. It is not governed by the Google Maps Platform Support [Technical Support Services Guidelines, the SLA, or the [Deprecation Policy]. However, any Google Maps Platform services used by the library remain subject to the Google Maps Platform Terms of Service.
 
 This library adheres to [semantic versioning] to indicate when backwards-incompatible changes are introduced. Accordingly, while the library is in version 0.x, backwards-incompatible changes may be introduced at any time.
 
@@ -88,21 +96,26 @@ If you find a bug, or have a feature request, please [file an issue] on GitHub. 
 You can also discuss this library on our [Discord server].
 
 <!--repo-specific anchor links-->
-[api-key]: https://developers.google.com/maps/documentation/android-sdk/get-api-key
-[devsite-guide]: https://developers.google.com/maps/documentation/android-sdk/utility
-[gmp-start]: https://console.cloud.google.com/google/maps-apis/start
-[maps-sdk]: https://developers.google.com/maps/documentation/android-sdk
+[API key]: https://developers.google.com/maps/documentation/PRODUCT/get-api-key
+[maps-sdk]: https://developers.google.com/maps/documentation/PRODUCT
 [documentation]: https://googlemaps.github.io/REPO
 [jetpack-compose]: https://developer.android.com/jetpack/compose
 [android-maps-ktx]: https://github.com/googlemaps/android-maps-ktx
+[npm-pkg]: https://npmjs.com/package/@googlemaps/NPM-REPO
 
 <!--constant anchor links-->
 [code of conduct]: CODE_OF_CONDUCT.md
 [contributing guide]: CONTRIBUTING.md
+[Deprecation Policy]: https://cloud.google.com/maps-platform/terms
 [developer community channels]: https://developers.google.com/maps/developer-community
 [Discord server]: https://discord.gg/hYsWbmk
 [file an issue]: https://github.com/googlemaps/REPO/issues/new/choose
+[license]: LICENSE
 [pull request]: https://github.com/googlemaps/REPO/compare
+[project]: https://developers.google.com/maps/documentation/PRODUCT/cloud-setup#enabling-apis
 [semantic versioning]: https://semver.org
+[Sign up with Google Maps Platform]: https://console.cloud.google.com/google/maps-apis/start
 [similar inquiry]: https://github.com/googlemaps/REPO/issues
+[SLA]: https://cloud.google.com/maps-platform/terms/sla
+[Technical Support Services Guidelines]: https://cloud.google.com/maps-platform/terms/tssg
 [Terms of Service]: https://cloud.google.com/maps-platform/terms
