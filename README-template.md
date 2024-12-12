@@ -5,13 +5,15 @@
 <!-- add PyPI links as nec -->
 
 <!--lifecycle badges-->
-![Alpha release](https://img.shields.io/badge/release-alpha-orange)
-<!-- add Beta and other releases as nec -->
+![Alpha](https://img.shields.io/badge/release-alpha-orange)
+![Beta](https://img.shields.io/badge/stability-beta-yellow)
+<!-- add other releases as nec -->
+![GitHub Release](https://img.shields.io/github/v/release/googlemaps/.github)
 ![Release](https://github.com/googlemaps/REPO/workflows/Release/badge.svg)
 
 <!--repo-specific badges-->
 ![Stable](https://img.shields.io/badge/stability-stable-green)
-![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg)
+[![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg)](https://github.com/googlemaps/REPO/actions/workflows/test.yml)
 <!-- ![Tests/Build Status](https://github.com/googlemaps/REPO/workflows/Test/badge.svg) -->
 
 <!--constant badges-->
