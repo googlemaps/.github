@@ -1,8 +1,8 @@
 <!--java/js-only badges-->
 [![Maven Central](https://img.shields.io/maven-central/v/com.google.maps.android/MVN-REPO)](https://maven-badges.herokuapp.com/maven-central/com.google.maps.android/MVN-REPO)
 [![npm](https://img.shields.io/npm/v/@googlemaps/NPM-REPO)](https://npmjs.com/package/@googlemaps/NPM-REPO)
-<!-- MVN-REPO or NPM-REPO may or may not be the same as GH repo, e.g, "android-" -->
-<!-- add PyPI links as nec -->
+[![PyPI](https://img.shields.io/pypi/v/PYPI-PKG.svg)](https://pypi.python.org/pypi/PYPI-PKG)
+<!-- MVN-REPO, NPM-REPO, or PYPI-PKG may or may not be the same as GH repo, e.g, "android-" -->
 
 <!--lifecycle badges-->
 ![Alpha](https://img.shields.io/badge/release-alpha-orange)
@@ -21,18 +21,20 @@
 [![GitHub License](https://img.shields.io/github/license/googlemaps/REPO?color=blue)][license]
 [![Discord](https://img.shields.io/discord/676948200904589322?color=6A7EC2&logo=discord&logoColor=ffffff)][Discord server]
 
-# New README Template
+# New README Template (Alpha|Beta|Frozen)
 
 ## Description
 
-This is a sample README file with the recommended sections for new libraries in the <https://github.com/googlemaps> organization. This is where you place the repo contents description.
+This is a sample README file with the recommended sections for new libraries in the <https://github.com/googlemaps> organization. This is where you place the description of the project with a hyperlink to the related product's Overview page on developers.google.com.
 
 ## Requirements
 
-* [Sign up with Google Maps Platform]
-* A Google Maps Platform [project] with the **PRODUCT** enabled
-* An [API key] associated with the project above
-* (others)
+- [Sign up with Google Maps Platform]
+- A Google Maps Platform [project] with the **PRODUCT** enabled
+- An [API key] associated with the project above
+- (optional) Operating system (and any version) requirements
+- (optional) Language(s) (and any version) requirements
+- (others)
 
 ## Installation
 
@@ -48,7 +50,8 @@ Link to the same app that demonstrates this library, if it exists (often a folde
 
 ## Documentation
 
-See the [documentation] for a full list of classes and their methods.
+- See the [reference documentation] for a full list of classes and their methods.
+- (optional) For more guidance, see the [documentation].
 
 ## Usage
 
@@ -79,7 +82,7 @@ Contributions are welcome and encouraged! If you'd like to contribute, send us a
 
 OR
 
-External contributions are not (yet) accepted for this repository. See [contributing guide] for more info.
+External contributions are not accepted for this repository. See [contributing guide] for more info.
 
 ## Terms of Service
 
@@ -100,13 +103,14 @@ You can also discuss this library on our [Discord server].
 <!--repo-specific anchor links-->
 [API key]: https://developers.google.com/maps/documentation/PRODUCT/get-api-key
 [maps-sdk]: https://developers.google.com/maps/documentation/PRODUCT
-[documentation]: https://googlemaps.github.io/REPO
+[reference documentation]: https://googlemaps.github.io/REPO
+[documentation]: https://developers.google.com/maps/xxx
 [jetpack-compose]: https://developer.android.com/jetpack/compose
 [android-maps-ktx]: https://github.com/googlemaps/android-maps-ktx
 [npm-pkg]: https://npmjs.com/package/@googlemaps/NPM-REPO
 
 <!--constant anchor links-->
-[code of conduct]: CODE_OF_CONDUCT.md
+[code of conduct]: ?tab=coc-ov-file#readme
 [contributing guide]: CONTRIBUTING.md
 [Deprecation Policy]: https://cloud.google.com/maps-platform/terms
 [developer community channels]: https://developers.google.com/maps/developer-community
