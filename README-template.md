@@ -19,6 +19,7 @@
 <!--constant badges-->
 ![GitHub contributors](https://img.shields.io/github/contributors/googlemaps/REPO?color=green)
 [![GitHub License](https://img.shields.io/github/license/googlemaps/REPO?color=blue)][license]
+[![StackOverflow](https://img.shields.io/stackexchange/stackoverflow/t/google-maps?color=orange&label=google-maps&logo=stackoverflow)](https://stackoverflow.com/questions/tagged/google-maps)
 [![Discord](https://img.shields.io/discord/676948200904589322?color=6A7EC2&logo=discord&logoColor=ffffff)][Discord server]
 
 # New README Template (Alpha|Beta|Frozen)
