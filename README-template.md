@@ -1,6 +1,6 @@
 <!--java/js-only badges-->
 [![Maven Central](https://img.shields.io/maven-central/v/com.google.maps.android/MVN-REPO)](https://maven-badges.herokuapp.com/maven-central/com.google.maps.android/MVN-REPO)
-[![npm](https://img.shields.io/npm/v/@googlemaps/NPM-REPO)](https://npmjs.com/package/@googlemaps/NPM-REPO)
+[![npm](https://img.shields.io/npm/v/@googlemaps/NPM-REPO)][npm-pkg]
 [![PyPI](https://img.shields.io/pypi/v/PYPI-PKG.svg)](https://pypi.python.org/pypi/PYPI-PKG)
 <!-- MVN-REPO, NPM-REPO, or PYPI-PKG may or may not be the same as GH repo, e.g, "android-" -->
 
@@ -8,17 +8,17 @@
 ![Alpha](https://img.shields.io/badge/release-alpha-orange)
 ![Beta](https://img.shields.io/badge/stability-beta-yellow)
 <!-- add other releases as nec -->
-![GitHub Release](https://img.shields.io/github/v/release/googlemaps/.github)
+<!--![GHRelease](https://img.shields.io/github/v/release/googlemaps/.github) -->
 ![Release](https://github.com/googlemaps/REPO/workflows/Release/badge.svg)
 
 <!--repo-specific badges-->
 ![Stable](https://img.shields.io/badge/stability-stable-green)
-[![Tests/Build Status](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg)](https://github.com/googlemaps/REPO/actions/workflows/test.yml)
+[![Tests/Build](https://github.com/googlemaps/REPO/actions/workflows/test.yml/badge.svg)](https://github.com/googlemaps/REPO/actions/workflows/test.yml)
 <!-- ![Tests/Build Status](https://github.com/googlemaps/REPO/workflows/Test/badge.svg) -->
 
 <!--constant badges-->
-![GitHub contributors](https://img.shields.io/github/contributors/googlemaps/REPO?color=green)
-[![GitHub License](https://img.shields.io/github/license/googlemaps/REPO?color=blue)][license]
+![Contributors](https://img.shields.io/github/contributors/googlemaps/REPO?color=green)
+[![License](https://img.shields.io/github/license/googlemaps/REPO?color=blue)][license]
 [![StackOverflow](https://img.shields.io/stackexchange/stackoverflow/t/google-maps?color=orange&label=google-maps&logo=stackoverflow)](https://stackoverflow.com/questions/tagged/google-maps)
 [![Discord](https://img.shields.io/discord/676948200904589322?color=6A7EC2&logo=discord&logoColor=ffffff)][Discord server]
 
@@ -32,7 +32,7 @@ This is a sample README file with the recommended sections for new libraries in 
 
 - [Sign up with Google Maps Platform]
 - A Google Maps Platform [project] with the **PRODUCT** enabled
-- An [API key] associated with the project above
+- An [API key] associated with the project above ... follow the [API key instructions] if you're new to the process
 - (optional) Operating system (and any version) requirements
 - (optional) Language(s) (and any version) requirements
 - (others)
@@ -103,6 +103,15 @@ You can also discuss this library on our [Discord server].
 
 <!--repo-specific anchor links-->
 [API key]: https://developers.google.com/maps/documentation/PRODUCT/get-api-key
+[API key instructions]: (varies... pick one below)
+https://developers.google.com/maps/documentation/PRODUCT/config#SOMETHING
+https://developers.google.com/maps/documentation/android-sdk/config#step_3_add_your_api_key_to_the_project
+https://developers.google.com/maps/flutter-package/config#step_4_add_your_api_key_to_the_project
+https://developers.google.com/maps/documentation/ios-sdk/config#get-key
+https://developers.google.com/maps/documentation/navigation/android-sdk/android-studio-setup#add_the_api_key_to_your_app
+https://developers.google.com/maps/documentation/navigation/ios-sdk/xcode-setup#get-key
+https://developers.google.com/maps/documentation/places/android-sdk/config#get-an-api-key
+https://developers.google.com/maps/documentation/places/ios-sdk/config#get-an-api-key
 [maps-sdk]: https://developers.google.com/maps/documentation/PRODUCT
 [reference documentation]: https://googlemaps.github.io/REPO
 [documentation]: https://developers.google.com/maps/xxx
