@@ -28,7 +28,7 @@ Get idomatic support for the languages and frameworks you use.
 
 - [JavaScript Jest Mocks](https://github.com/googlemaps/js-jest-mocks)
 - [JavaScript Types](https://github.com/googlemaps/js-types) and [TypeScript Guards](https://github.com/googlemaps/js-typescript-guards)
-- [React Wrapper for Maps JavaScript API](https://github.com/googlemaps/react-wrapper)
+- [React for Maps JavaScript API](https://github.com/visgl/react-google-maps)
 - Kotlin Extensions [for Maps SDK for Android](https://github.com/googlemaps/android-maps-ktx), [for Places SDK for Android](https://github.com/googlemaps/android-places-ktx)
 - [Maps Compose](https://github.com/googlemaps/android-maps-compose), Jetpack Compose components for the Maps SDK for Android
 - [Firebase Extensions for Google Maps Platform](https://github.com/googlemaps/gmp-firebase-extensions)
