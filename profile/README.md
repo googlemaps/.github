@@ -4,12 +4,13 @@ This GitHub organization contains open source libraries and tools that ease and 
 
 ## Client libraries
 
-Call Web Services APIs from your preferred language:
+Call Google Maps Platform Web Services APIs using the [Google Cloud Client Libraries](https://docs.cloud.google.com/apis/docs/cloud-client-libraries), organized by language on GitHub with support for [Places API (New)](https://developers.google.com/maps/documentation/places/web-service/op-overview) and [Routes API](https://developers.google.com/maps/documentation/routes) (replacing Directions API and Distance Matrix API):
 
-- [Go](https://github.com/googlemaps/google-maps-services-go)
-- [Java](https://github.com/googlemaps/google-maps-services-java)
-- [Node.js](https://github.com/googlemaps/google-maps-services-js)
-- [Python](https://github.com/googlemaps/google-maps-services-python)
+- **Go** ([`googleapis/google-cloud-go`](https://github.com/googleapis/google-cloud-go/tree/main/maps)): [Places API (New)](https://github.com/googleapis/google-cloud-go/tree/main/maps/places) | [Routes API](https://github.com/googleapis/google-cloud-go/tree/main/maps/routing)
+- **Java** ([`googleapis/google-cloud-java`](https://github.com/googleapis/google-cloud-java)): [Places API (New)](https://github.com/googleapis/google-cloud-java/tree/main/java-maps-places) | [Routes API](https://github.com/googleapis/google-cloud-java/tree/main/java-maps-routing)
+- **Node.js** ([`googleapis/google-cloud-node`](https://github.com/googleapis/google-cloud-node)): [Places API (New)](https://github.com/googleapis/google-cloud-node/tree/main/packages/google-maps-places) | [Routes API](https://github.com/googleapis/google-cloud-node/tree/main/packages/google-maps-routing)
+- **Python** ([`googleapis/google-cloud-python`](https://github.com/googleapis/google-cloud-python)): [Places API (New)](https://github.com/googleapis/google-cloud-python/tree/main/packages/google-maps-places) | [Routes API](https://github.com/googleapis/google-cloud-python/tree/main/packages/google-maps-routing)
+- **.NET** ([`googleapis/google-cloud-dotnet`](https://github.com/googleapis/google-cloud-dotnet)): [Places API (New)](https://github.com/googleapis/google-cloud-dotnet/tree/main/apis/Google.Maps.Places.V1) | [Routes API](https://github.com/googleapis/google-cloud-dotnet/tree/main/apis/Google.Maps.Routing.V2)
 
 ## Utility libraries
 
